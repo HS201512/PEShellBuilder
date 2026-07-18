@@ -12,3 +12,7 @@
 
 - 自定义欢迎标语
 位于此目录的 LaunchBats 文件夹里，您可以把PEShell.bat或PEShell_NotTools.bat中的欢迎标语改为您想要的
+
+- 自定义程序包
+注意：现在Win11的LCU都是wim或msu格式了，仅支持cab格式的程序包
+可以把要添加的cab（包括更新）放到packages文件夹里
