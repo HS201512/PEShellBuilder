@@ -60,7 +60,6 @@ md "%~dp0temp\mount"
 md "%~dp0temp\wim"
 dism /export-image /sourceimagefile:"%drv%:\sources\boot.wim" /sourceindex:1 /destinationimagefile:"%~dp0temp\wim\boot.wim"
 dism /mount-wim /wimfile:"%~dp0temp\wim\boot.wim" /mountdir:"%~dp0temp\mount"
-pause
 takeown /f "%~dp0temp\mount\Windows\System32\winre.jpg" /a
 icacls "%~dp0temp\mount\Windows\System32\winre.jpg" /grant Administrators:F /c
 del "%~dp0temp\mount\Windows\System32\winre.jpg"
@@ -77,6 +76,12 @@ echo wpeinit >> %~dp0temp\mount\Windows\System32\winpeshl.ini
 if /i "%choice%"=="Y" echo PEShell.bat >> %~dp0temp\mount\Windows\System32\winpeshl.ini
 if /i "%choice%"=="N" echo PEShell.bat >> %~dp0temp\mount\Windows\System32\winpeshl.ini
 if /i "%choice%"=="F" echo PEShell_NotTools.bat >> %~dp0temp\mount\Windows\System32\winpeshl.ini
+if exist "%~dp0packages\*.cab" (
+    dir /b "%~dp0packages" | find "KB" >nul 2>&1
+    if errorlevel 0 set resetbase=1
+    dism /image:"%~dp0temp\mount" /add-package /packagepath:"%~dp0packages"
+    if "%resetbase%"=="1" dism /image:"%~dp0temp\mount" /cleanup-image /startcomponentcleanup /resetbase
+)
 dism /unmount-wim /mountdir:"%~dp0temp\mount" /commit
 dism /export-image /sourceimagefile:"%~dp0temp\wim\boot.wim" /sourceindex:1 /destinationimagefile:"%~dp0ISO\sources\boot.wim" /bootable
 
