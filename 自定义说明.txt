@@ -12,4 +12,4 @@ PEShellBuilder 自定义说明
 
 - 自定义程序包
 注意：现在Win11的LCU都是wim或msu格式了，仅支持cab格式的程序包
-可以把要添加的cab（包括更新）放到packages文件夹里
+可以把要添加的cab（包括更新）放到Packages文件夹里

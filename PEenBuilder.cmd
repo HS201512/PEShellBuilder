@@ -36,10 +36,10 @@ exit
 echo Custom PE tools
 echo.
 echo Existing tools:
-dir /b %~dp0PETools
+dir /b "%~dp0PETools"
 echo.
 echo Tools that can't be left:
-echo Depends on runtime libraries£¨e.g. WinNTSetup EasyRC CoolInstaller£©
+echo Depends on runtime libraries
 echo.
 echo If you choose F, PE won't come with any third-party tools
 set /p choice=Do you want custom tools£¿£¨Y/N/F£©£º

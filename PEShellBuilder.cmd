@@ -35,10 +35,10 @@ exit
 echo 自定义 PE 工具
 echo.
 echo 目前存在的工具：
-dir /b %~dp0PETools
+dir /b "%~dp0PETools"
 echo.
 echo 不能放的工具：
-echo 依赖运行库的（例如WinNTSetup、EasyRC、CoolInstaller）
+echo 依赖运行库的
 echo.
 echo 如果选择F，那么PE将不带任何第三方工具
 set /p choice=是否自定义工具？（Y/N/F）：
