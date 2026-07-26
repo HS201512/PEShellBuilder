@@ -1,0 +1,247 @@
+{\rtf1\ansi\ansicpg936\deff0\nouicompat\deflang1033\deflangfe2052\deftab420{\fonttbl{\f0\fswiss\fprq2\fcharset134 \'ce\'a2\'c8\'ed\'d1\'c5\'ba\'da;}{\f1\fswiss\fprq2\fcharset0 Calibri;}}
+{\colortbl ;\red192\green0\blue0;\red47\green84\blue150;\red83\green129\blue53;\red0\green77\blue187;\red0\green32\blue96;\red0\green0\blue0;\red68\green114\blue196;\red31\green56\blue100;\red255\green0\blue0;}
+{\*\generator Riched20 6.3.9600}{\info{\horzdoc}{\*\lchars $([\'7b\'a1\'a4\'a1\'ae\'a1\'b0\'a1\'b4\'a1\'b6\'a1\'b8\'a1\'ba\'a1\'be\'a1\'b2\'a1\'bc\'a8\'94\'a9\'76\'a9\'78\'a9\'7a\'a1\'e7\'a3\'a8\'a3\'ae\'a3\'db\'a3\'fb\'a1\'ea\'a3\'a4}{\*\fchars !%),.:\'3b>?]\'7d\'a1\'a7\'a1\'e3\'a1\'a4\'a1\'a6\'a1\'a5\'a8\'44\'a1\'ac\'a1\'af\'a1\'b1\'a1\'ad\'a1\'eb\'a1\'e4\'a1\'e5\'a1\'e6\'a1\'c3\'a1\'a2\'a1\'a3\'a1\'a8\'a1\'b5\'a1\'b7\'a1\'b9\'a1\'bb\'a1\'bf\'a1\'b3\'a1\'bd\'a8\'95\'a6\'e1\'a6\'e3\'a6\'e7\'a6\'e5\'a6\'eb\'a9\'77\'a9\'79\'a9\'7b\'a3\'a1\'a3\'a2\'a3\'a5\'a3\'a7\'a3\'a9\'a3\'ac\'a3\'ae\'a3\'ba\'a3\'bb\'a3\'bf\'a3\'dd\'a3\'e0\'a3\'fc\'a3\'fd\'a1\'ab\'a1\'e9}}
+{\*\mmathPr\mdispDef1\mwrapIndent1440 }\viewkind4\uc1 
+\pard\nowidctlpar\qj\kerning2\f0\fs24 Please maximize the window when reading this article (WinPE producers and system customizers should look at the \cf1 configuration files in the Languages directory\cf0  and the \cf2 [parameter description]\cf0  of \cf1 this article\cf0 ).\par
+\par
+
+\pard\nowidctlpar\qc\cf3\b\fs28 WimTool is a Win32 program based on WIMGAPI and WIMLIB\par
+
+\pard\nowidctlpar\qj\cf2\fs24 I. Basic introduction\par
+\cf1\b0 1. powerful\par
+
+\pard\nowidctlpar\fi240\qj\cf0 (1). Support WIM image processing operations such as \cf1 mounting, unloading, capturing, decompressing, exporting, importing, merging, splitting, compression type conversion, image volume optimization, and image incremental backup\cf0 , including \cf1 ESD\cf0  files of LZMS compression type;\par
+(2). Support \cf1 browsing, extracting, adding, renaming, and deleting the volume information and file directories\cf0  in WIM;\par
+(3). Window system that \cf1 supports online hot backup\cf0  of the current hard disk can backup your system without starting WinPE;\par
+(4). Whether it is a backup system or a recovery system, WimTool can \cf1 filter and exclude file directories\cf0  for backup and recovery through the rules defined by configuration files, so as to avoid suppressing unnecessary file directories into the backed-up WIM;\par
+
+\pard\nowidctlpar\qj\cf1 2. efficient and fast\par
+
+\pard\nowidctlpar\fi240\qj\cf0 Pure Win32 C++ code, without Net library and VC runtime, \cf1 can run in extremely simplified system and WinPE\cf0  system;\par
+
+\pard\nowidctlpar\qj\cf1 3. the operation is simple\par
+
+\pard\nowidctlpar\fi240\qj\cf0 Windows graphical \cf1 window interface\cf0 , through \cf1 mouse click, pop-up menu, mouse drag and drop\cf0 , you can perform various operations on WIM files, eliminating the trouble of memorizing various command lines;\par
+
+\pard\nowidctlpar\qj\cf1 4. Feature expansion\par
+
+\pard\nowidctlpar\fi240\qj\cf0 WimTool s\cf1 upports setting different icon\cf0  for each WIM or ESD file, and has built-in \cf1 icon extractor and the function of converting pictures into icon\cf0 .\par
+
+\pard\nowidctlpar\qj You can also make some software into a green single-file compressed version through [shell execution extension]. The principle is to execute a command after mounting to a specified directory. This single-file compressed version can avoid killing antivirus tools.\par
+\cf1 5. rich parameters\par
+
+\pard\nowidctlpar\fi240\qj\cf0 WimTool also has a \cf1 wealth of command line parameters\cf0 , basically covering all the functions of command line parameters in Imagex.EXE and WimLib-Imagex.EXE (see points 4 and 5, parameter introduction and parameter description).\par
+
+\pard\nowidctlpar\qj\cf4\b\par
+\cf5 II. Operating environment\par
+
+\pard\nowidctlpar\fi240\qj\cf6\b0 Windows 7\'a1\'abWindows 11 and their corresponding PE systems are supported, and all functions can be used after installing WimMount components in the above systems; If WimMount components are not installed, most common functions (except mounting and dismounting) can be used.\par
+
+\pard\nowidctlpar\qj\par
+\cf2\b III. the document description\par
+\cf6\b0 1. This tool consists of four files: the main program \cf1 WimTool.EXE\cf6 , the extended module \cf1 WimShExt.DLL\cf6 , the help file (this article, \cf1 RTF format\cf6 ) and the language resource file (\cf1 INI text format\cf6 ).\par
+The help files and language resource files are located in the Languages directory.\par
+2. The main program WimTool.EXE and the extension module WimShExt.DLL are divided into x64 and x86 versions. The help files and language resource files do not distinguish between x64 and x86 versions, and Simplified Chinese is the built-in version.\par
+3. No matter the x64 version or x86 version, the main program WimTool.EXE and the extension module WimShExt.DLL cannot be renamed. In the Languages directory, the basic names of the help files and language resource files of each language should be the same.\par
+Users can add or delete help descriptions and language resource files in different \cf1 Languages\cf6  by themselves, and the simplified Chinese system can delete the languages directory, but the package released to the outside world must ensure the integrity and standardization of the file directory.\par
+\cf0\par
+\cf2\b IV. Brief introduction of parameters\par
+
+\pard\nowidctlpar\fi360\qj\cf0\b0 The WimTool command line has three types of parameters: \cf1 <function parameter>\cf0 , \cf7 <required parameter>\cf0  and [optional parameter]. Parameters in angle brackets "< >" cannot be omitted, parameters in square brackets "[]" can be omitted, and parameters between vertical lines "|" can only be selected.\par
+
+\pard\nowidctlpar\qj\cf1 1. <functional parameters>\par
+\cf0 The first parameter of WimTool indicates the function task that WimTool is performing, and cannot be omitted. The functions of the 20 < function parameters > are as follows:\cf6  \cf0\par
+\cf6\par
+\trowd\trgaph108\trleft-108\trbrdrl\brdrs\brdrw10 \trbrdrt\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trpaddl108\trpaddr108\trpaddfl3\trpaddfr3
+\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx1276\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx3261\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx5529\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx7371\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx9356\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx11624\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx13041\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx14459\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx16018\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx17577\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx18995 
+\pard\intbl\nowidctlpar\qc\fs21 Parameters\cell /Mount\cell /MountRW\cell /ReMount\cell /UnMount\cell /CleanUp\cell /Apply\cell /ExtrImage\cell /Capture\cell /WimTemp\cell /ExtrPath\cell\row\trowd\trgaph108\trleft-108\trbrdrl\brdrs\brdrw10 \trbrdrt\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trpaddl108\trpaddr108\trpaddfl3\trpaddfr3
+\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx1276\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx3261\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx5529\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx7371\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx9356\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx11624\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx13041\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx14459\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx16018\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx17577\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx18995 
+\pard\intbl\nowidctlpar Function\cell ReadOnlyMount\cell WriteMount Image\cell remount image\cell UnMount image\cell clear invalid mount\cell untie image\cell untie image\cell make image\cell SetWorkPath\cell Extract Path\cell\row 
+\pard\nowidctlpar\qj\par
+\trowd\trgaph108\trleft-108\trrh270\trbrdrl\brdrs\brdrw10 \trbrdrt\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trpaddl108\trpaddr108\trpaddfl3\trpaddfr3
+\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx1276\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx2977\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx4536\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx6663\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx8647\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx10348\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx11766\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx13467\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx15593\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx17436\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx18995 
+\pard\intbl\nowidctlpar\qc Parameters\cell /CompPath\cell /Append\cell /Register\cell /Unload\cell /Export\cell /Split\cell /Export\cell /Icon\cell /MountPath\cell /AppenPath\cell\row\trowd\trgaph108\trleft-108\trbrdrl\brdrs\brdrw10 \trbrdrt\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trpaddl108\trpaddr108\trpaddfl3\trpaddfr3
+\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx1276\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx2977\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx4536\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx6663\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx8647\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx10348\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx11766\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx13467\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx15593\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx17436\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx18995 
+\pard\intbl\nowidctlpar\qj Function\cell Make image\cell Add image\cell Register extension\cell Unins extension\cell Export Image\cell Split image\cell Export merge\cell Rebuild IconCache\cell SetMountPath\cell Addend Path\cell\row 
+\pard\nowidctlpar\fs24\par
+\cf2 2. <required parameters>\par
+\cf6 Immediately after \cf1 <function parameter>\cf6 , there are generally 1 ~ 2 <required parameters>, indicating the objects of operation, such as files, directories, volume numbers, etc. In the [image volume number|image volume name] parameter, it is recommended to use the \cf2 image volume number\cf6 .\par
+3. [Optional parameters]\par
+[Optional parameter] At the end of WimTool command line, it is optional to indicate other functions performed by WimTool.\cf2\par
+\par
+\b V. Parameter description \b0\par
+ \cf6 1. Mount the image\par
+ (1). Read-only mount\par
+
+\pard\nowidctlpar\fi420 Format: WimTool.EXE  \cf1 /Mount\cf6   \cf8 <image file[,image volume number|image volume name]>  <target path>\cf6\par
+Note: The image volume number or image volume name is only one of them, and the image file and the image volume number (or image volume name) are combined into a necessary parameter, using "connection; if the file directory name has spaces, it must be surrounded by".\par
+Example: WimTool.EXE  \cf1 /Mount\cf6   \cf8 "F:\\My Tools.WIM,2"  R:\\Toolbox\cf6\par
+
+\pard\nowidctlpar  (2). Writeable mount\par
+
+\pard\nowidctlpar\fi420 Format: WimTool.EXE  \cf1 /MountRW\cf6   \cf2 <image file[,image volume number|image volume name]>  <target path>\cf6\par
+Note: The image volume number or image volume name is only one of them, and the image file and the image volume number (or image volume name) are combined into a necessary parameter, using "connection; if the file directory name has spaces, it must be surrounded by".\par
+Example: WimTool.EXE  \cf1 /MountRW\cf6   \cf2 "F:\\My Tools.WIM,2"  R:\\Toolbox\cf6\par
+
+\pard\nowidctlpar  (3). Reload\par
+
+\pard\nowidctlpar\fi420 Format: WimTool.EXE  \cf1 /ReMount\cf6   [target path]\par
+Description: Remounting is to remount the specified "defective mount" and remount all "default mount" when omitting [target path].\par
+Example: WimTool.EXE  \cf1 /ReMount\cf6\par
+
+\pard\nowidctlpar  2. Uninstall the image \par
+ (1). Uninstall the specified image\par
+
+\pard\nowidctlpar\fi420 Format: WimTool.EXE  \cf1 /UnMount\cf6   \cf2 <Tject Path|/All>\cf6   [/Commit|/Update]\par
+Description: When <target path> is "/All", it means that all mount images are read-only uninstalled; "/Commit" means an image that can be uninstalled on the mount directory; and "/Update" means asking whether the specified directory can be unwrote.\par
+Example: WimTool.EXE  \cf1 /UnMount\cf6   \cf2 R:\\Toolbox\cf6   /Commit\par
+Example: WimTool.EXE  \cf1 /UnMount\cf6   \cf2 R:\\Toolbox\cf6\par
+Example: WimTool.EXE  \cf1 /UnMount\cf6   /All \par
+
+\pard\nowidctlpar  (2). Clear invalid mount\par
+
+\pard\nowidctlpar\fi420 Format: WimTool.EXE  \cf1 /CleanUp\cf6\par
+
+\pard\nowidctlpar  3. Untie the image \par
+ (1). Silent, no progress in processing\par
+
+\pard\nowidctlpar\fi420 Format: WimTool.EXE  \cf1 /Apply\cf6   \cf2 <Image File[,Image Volume Number|Image Volume Name]>\cf6   \cf2 <Target Path|>\cf6   [Security Permission] [Decompression Rules] \par
+
+\pard\nowidctlpar  (2). Window method, providing processing progress\par
+
+\pard\nowidctlpar\fi420 Format: WimTool.EXE  \cf1 /ExtrFile\cf6   \cf2 <Image File[,Image Volume Number|Image Volume Name]>  <Tategoal Path>\cf6   [Security Permission] [Decompression Rules]\par
+Description: [Security Permissions] Is "/NotAcl" And [decompression Rule] Is "/Config <configuration Profile>"\par
+Example: WimTool.EXE  \cf1 /Apply\cf6   \cf2 D:\\Test.WIM,2  D:\\PROGRAMS\cf6\par
+Example: WimTool.EXE  \cf1 /ExtrFile\cf6   \cf2 D:\\Test.WIM,1  D:\\PROGRAMS  \cf6 /NotAcl\par
+Example: WimTool.EXE  \cf1 /ExtrFile\cf6   \cf2 F:\\SysBack.WIM,2  C:\\\cf6   /NotAcl  /Config Config.INI \par
+
+\pard\nowidctlpar  4. Make images \par
+ (1). Silent, no progress in processing\par
+
+\pard\nowidctlpar\fi420 Format: WimTool.EXE  \cf1 /Capture\cf6   \cf2 <target path>  <image file[,image name]>\cf6   [compression type]  [startup marker]  [capture rule]\par
+Description: [compression type] is "/Compress None|Xpress|Lzx|Lzms", [bootup tag] is "/Boot", [capture rule] is "/Config <configuration file>"\par
+Example: WimTool.EXE  \cf1 /Capture\cf6   \cf2 D:\\PROGRAMS  "D:\\Test.WIM,My Programs"\cf6   /Compress Xpress  /Boot \par
+
+\pard\nowidctlpar  (2). Window method, provides processing progress and supports file filtering.\par
+
+\pard\nowidctlpar\fi420 Format: WimTool.EXE  \cf1 /CompPath\cf6   \cf2 <Target Path|>  <image File[,Image Name]>\cf6   [Compression Type] [Start Marker] [Capture Rules]\par
+Description: [compression type] is "/Compress None|Xpress|Lzx|Lzms", [bootup tag] is "/Boot", [capture rule] is "/Config <configuration file>"\par
+Example: WimTool.EXE  /\cf1 CompPath\cf6   \cf2 D:\\WinPE  R:\\WinPE.WIM\cf6   /Boot\par
+Example: WimTool.EXE  \cf1 /CompPath\cf6   \cf2 C:\\  F:\\SysBack.WIM\cf6   /Config Config.INI \par
+
+\pard\nowidctlpar  5. Additional image(s)\par
+
+\pard\nowidctlpar\fi315 Format: WimTool.EXE  \cf1 /Append\cf6   \cf2 <target path>  <image file[,image name]>\cf6   [compression type] [startup tag] [capture rule]\par
+Description: The [boot tag] is "/Boot" and the [capture rule] is "/Config <profile>"\par
+Example: WimTool.EXE  \cf1 /Append\cf6   \cf2 D:\\PROGRAMS  "D:\\Test.WIM,My Programs"\cf6   /Compress  Lzx  /Boot \par
+
+\pard\nowidctlpar  6. Export and merge\par
+
+\pard\nowidctlpar\fi315 Format: WimTool.EXE  \cf1 /Export\cf6   <Imaging File[,Image Volume Number|Image Volume Name]>  <Imaging File>  [Compression Type]\par
+Description: [Compression type] is "/Compression". When the compression type is "Lzms", it is executed in a window mode and provides processing progress and a cancel button\par
+Example: WimTool.EXE  \cf1 /Export\cf6   \cf2 F:\\SysBack.WIM,0  D:\\Test.WIM\cf6   /Compress Lzx \par
+
+\pard\nowidctlpar  7. Split image\par
+
+\pard\nowidctlpar\fi315 Format: WimTool.EXE  \cf1 /Split\cf6   \cf2 <image file>  <image file,subcontract size>\cf6\par
+Description: The subcontract size is in MB, which \cf2 is a required parameter\cf6 . \par
+Example: WimTool.EXE  \cf1 /Split\cf6   \cf2 F:\\Test.WIM  R:\\SSS.WIM,100\cf6\par
+
+\pard\nowidctlpar  8. Registration function\par
+
+\pard\nowidctlpar\fi315 Format: WimTool.EXE  \cf1 /Register\cf6   [/WimTemp TemporaryWorkingDirectory] [/MountPath BaseMountDirectory] [Icon] [Memu] [Exec]\par
+Description: [Icon] [Memu] [Exec] Respectively represent Icon expansion, Menu expansion and File association.\par
+Example: WimTool.EXE  \cf1 /Register\cf6  Icon Memu  Exec  /WimTemp  F:\\WimTemp  /MountPath  F:\\MountPath.\par
+
+\pard\nowidctlpar  9. Uninstall function\par
+
+\pard\nowidctlpar\fi315 Format: WimTool.EXE  \cf1 /Unload\cf6   [Icon] [Memu] [Exec]\par
+Description: Omitting optional parameters means registering all functions. \par
+Example: WimTool.EXE  \cf1 /Unload\cf6\par
+
+\pard\nowidctlpar 10. Editing function\par
+(1). Extract the file directory\par
+Format: WimTool.EXE  \cf1 /ExtrPath\cf6   \cf2 <image file[,image volume number|image volume name]>\cf6   <file directory within image|@[\\]file directory list file>  <target directory>\par
+Note: Only one of the image volume number or image volume name is selected, and the image file and image volume number (or image volume name) are combined as a required parameter, and they are connected by ","; If there are spaces in the file directory name, it must be surrounded by "".\par
+Example: WimTool.EXE  \cf1 /ExtrPath\cf6   \cf2 d:\\install.esd,2\cf6   windows\\system32\\wimgapi.dll  d:\\test.\par
+Example: WimTool.EXE  \cf1 /ExtrPath\cf6   \cf2 d:\\install.esd,2\cf6   windows\\system32\\WIM*. *  d:\\test  //supports wildcards "? "and" * "\par
+Example: WimTool.EXE  \cf1 /ExtrPath\cf6   \cf2 d:\\install.esd,2\cf6   @e:\\filelist.txt  d:\\test  //prefix "@" means that the file directory to be extracted is listed in e:\\filelist.txt.\par
+Example: WimTool.EXE  \cf1 /ExtrPath\cf6   \cf2 d:\\install.esd,2\cf6   @\\FileList.TXT  d:\\test   //prefix "\\" means that the absolute path of FileList.TXT is omitted, which means that filelist.txt is in the same directory as the image.\par
+Description: The following is the contents of a file directory list file, indicating all files starting with WIM and the entire registry directory. A list file can have multiple lines, which can be a certain file directory or a kind of file can be represented by wildcards.\par
+\trowd\trgaph108\trleft1002\trbrdrl\brdrs\brdrw10 \trbrdrt\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trpaddl108\trpaddr108\trpaddfl3\trpaddfr3
+\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx7347 
+\pard\intbl\nowidctlpar //This is an example of a file directory list.\cell\row\trowd\trgaph108\trleft1002\trbrdrl\brdrs\brdrw10 \trbrdrt\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trpaddl108\trpaddr108\trpaddfl3\trpaddfr3
+\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx7347 
+\pard\intbl\nowidctlpar\cf0 Windows\\System32\\WIM*.*\cf6\cell\row\trowd\trgaph108\trleft1002\trbrdrl\brdrs\brdrw10 \trbrdrt\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trpaddl108\trpaddr108\trpaddfl3\trpaddfr3
+\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx7347 
+\pard\intbl\nowidctlpar\cf0 Windows\\System32\\Drivers\\WIM*.*\cf6\cell\row\trowd\trgaph108\trleft1002\trbrdrl\brdrs\brdrw10 \trbrdrt\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trpaddl108\trpaddr108\trpaddfl3\trpaddfr3
+\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx7347 
+\pard\intbl\nowidctlpar\cf0 Windows\\System32\\ Config\cf6\cell\row 
+\pard\nowidctlpar\par
+(2). Additional file directory\par
+Format: WimTool.EXE  \cf1 /Appenpath\cf6   \cf2 <image file[,image volume number|image volume name]>\cf6   <file directory within the image>  <file directory to be appended|@[\\]file directory list file>\par
+Note: Only one of the image volume number or image volume name is selected, and the image file and image volume number (or image volume name) are combined as a required parameter, and they are connected by ","; If there are spaces in the file directory name, it must be surrounded by "".\par
+Example: WimTool.EXE  \cf1 /Appenpath\cf6    \cf2 d:\\install.esd,4\cf6   Windows\\system32  d:\\sysbackup\\Windows\\system32\\wimgapi.dll.\par
+Example: WimTool.EXE  \cf1 /Appenpath\cf6    \cf2 d:\\install.esd,4\cf6   Windows\\system32  d:\\sysbackup\\Windows\\system32\\WIM*. *\par
+Example: WimTool.EXE  \cf1 /Appenpath\cf6    \cf2 d:\\install.esd,4\cf6   Windows\\system32  @e:\\filelist.txt\tab\tab //File directory list file refer to the above example.\par
+Example: WimTool.EXE  \cf1 /Appenpath\cf6    \cf2 d:\\install.esd,4\cf6   Windows\\system32  @\\filelist.txt\tab\tab\tab //The meanings of the preambles "@" and "\\" are the same as above.\par
+(3). Delete the file directory\par
+Format: WimTool.EXE  \cf1 /Remove\cf6   <\cf2 image file[,image volume number|image volume name]>\cf6   <file directory within image|@[\\]file directory list file>\par
+Note: Only one of the image volume number or image volume name is selected, and the image file and image volume number (or image volume name) are combined as a required parameter, and they are connected by ","; If there are spaces in the file directory name, it must be surrounded by "".\par
+Example: WimTool.EXE  \cf1 /Remove\cf6   \cf2 d:\\install.esd,2\cf6   Windows\\system32\\wimgapi.dll.\par
+Example: WimTool.EXE  \cf1 /Remove\cf6   \cf2 d:\\install.esd,2\cf6   Windows\\system32\\WIM*. *\par
+Example: WimTool.EXE  \cf1 /Remove\cf6   \cf2 d:\\install.esd,2\cf6   @e:\\filelist.txt\tab\tab\tab //file directory list file refer to the above example.\par
+Example: WimTool.EXE  \cf1 /Remove\cf6   \cf2 d:\\install.esd,2\cf6   @\\filelist.txt\tab\tab\tab //The meanings of the leading characters "@" and "\\" are as above.\par
+\par
+(4). The window operation method\par
+On page 5 of WimTool, you can browse the volume image and file directory of WIM in addition to the file directory on the hard disk, and you can perform four operations such as \cf1 [extract], [append], [delete] and [rename]\cf6  on the volume image and file directory of WIM.\par
+These four operations can be realized through the right mouse button menu; [Extract] and [Append] can be achieved by dragging with the mouse; [Rename] operation can also be realized by the shortcut key F2. [Extract], [Delete] and [Append] in the window can be operated in batches.\par
+In the browse file directory window, you can return to the previous directory in turn by clicking the first item in the list "Previous directory" or the return icon at the lower left; Click the "serial number" in the header to directly return to the root directory of the system "My Computer".\par
+\par
+11. Other functions \par
+ (1). Rebuild the system icon cache \par
+
+\pard\nowidctlpar\fi420 Format: WimTool.EXE  \cf1 /Icon\cf6   [icon cache size]\par
+Note: The size of the icon cache is 1024 to 8192, that is between 1MB and 8MB, and integer MB is recommended\par
+Example: WimTool.EXE  \cf1 /Icon\cf6   8192\par
+
+\pard\nowidctlpar  (2). Launch the specified function page \par
+
+\pard\nowidctlpar\fi420 Format: WimTool.EXE  \cf1 /Page\cf6   \cf2 <[file directory],function page number>\cf6\par
+Example: WimTool.EXE  \cf1 /Page\cf6   \cf2 F:\\Test.WIM,3\cf6\par
+Example: WimTool.EXE  \cf1 /Page \cf6 ,3\par
+
+\pard\nowidctlpar (3). Setup temporary work directory\par
+
+\pard\nowidctlpar\fi420 Format: WimTool.EXE  \cf1 /WimTemp\cf6   \cf2 <Full name of the directory>\cf6\par
+Example: WimTool.EXE  \cf1 /WimTemp\cf6   \cf2 D:\\WimTool\\WimTemp\cf6\par
+
+\pard\nowidctlpar (4). Set the basic mount directory\par
+
+\pard\nowidctlpar\fi420 Format: WimTool.EXE  \cf1 /MountPath\cf6   \cf2 <Full name of the directory>\cf6\par
+Example: WimTool.EXE  \cf1 /MountPath\cf6   \cf2 D:\\WimTool\\MountPath\cf6\par
+
+\pard\nowidctlpar\par
+
+\pard\nowidctlpar\ri1260\qj\cf2\b VI. Attention to use\b0\par
+\cf6 1. WimTool must \cf1 run as an administrator\cf6 , and WimTool components must be installed correctly in the system to use all the functions of wimtool.\par
+2. Some functions may not be available in the simplified WinPE system.\par
+3. \cf1 The temporary directory of the system must have enough space\cf6 ; When used in PE, the temporary directory is recommended to be set on the hard disk.\par
+4. Only one volume in an image has the startup mark; The volume number in the image is unique, while the volume name and volume description are only descriptions of the image volume, but they are not unique.\par
+That is to say, different volumes in an image can have the same name and description.\par
+5. When there is an error or abnormality in WIM file association in the system, please click [Cancel File Association] and then click [Set File Association] to repair it.\par
+6. If you are not familiar with the configuration file of the captured image, please don't modify it, just use the default settings.\par
+7. After switching languages, the main module interface of WimTool can take effect immediately, and the right-click menu needs to be restarted or logged out before it can take effect.\par
+8. WimTool has the function of filtering and excluding files when capturing or decompressing images, and supports the file directory with wildcards. And' *', to understand the writing of filtering and exclusion rules, please see the INI file in the Languages directory.\par
+Or click the [Profile] button on page 1 and click the [Default] button in the pop-up window;\par
+9. WimTool uses the built-in configuration file by default when capturing or decompressing images. WinPE downloaded from the Internet may have special files in the Temp directory, and unpacking with WimTool may not start. Please know the built-in configuration file of WimTool.\par
+\par
+\cf2\b VII. Special statement\par
+\cf6\b0 1. WimTool is free software. You can use, copy, distribute and disseminate this software without restriction. You must ensure that every copy, distribution and dissemination is true and complete.\par
+2. I don't provide any guarantee and guarantee of WimTool, and I am not responsible for any theoretical or actual loss when users use this software.\par
+3. It is forbidden for anyone or any organization to use this software to engage in any illegal or profit-making activities.\par
+\par
+
+\pard\nowidctlpar\ri1260\qr  \cf9\b Lxl1638 Maoming No.1 Middle School Lao Jiu, 2026.01.01\par
+}
+ 

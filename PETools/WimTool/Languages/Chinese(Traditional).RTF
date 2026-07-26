@@ -1,0 +1,263 @@
+{\rtf1\ansi\ansicpg936\deff0\nouicompat\deflang1033\deflangfe2052\deftab420{\fonttbl{\f0\froman\fprq2\fcharset136 PMingLiU;}{\f1\fswiss\fprq2\fcharset134 \'ce\'a2\'c8\'ed\'d1\'c5\'ba\'da;}{\f2\fswiss\fprq2\fcharset0 Calibri;}}
+{\colortbl ;\red192\green0\blue0;\red0\green0\blue160;\red0\green64\blue0;\red0\green0\blue0;\red0\green36\blue108;\red0\green32\blue96;\red68\green114\blue196;\red47\green84\blue150;\red31\green56\blue100;\red255\green0\blue0;}
+{\*\generator Riched20 6.3.9600}{\info{\horzdoc}{\*\lchars $([\'7b\'a1\'a4\'a1\'ae\'a1\'b0\'a1\'b4\'a1\'b6\'a1\'b8\'a1\'ba\'a1\'be\'a1\'b2\'a1\'bc\'a8\'94\'a9\'76\'a9\'78\'a9\'7a\'a1\'e7\'a3\'a8\'a3\'ae\'a3\'db\'a3\'fb\'a1\'ea\'a3\'a4}{\*\fchars !%),.:\'3b>?]\'7d\'a1\'a7\'a1\'e3\'a1\'a4\'a1\'a6\'a1\'a5\'a8\'44\'a1\'ac\'a1\'af\'a1\'b1\'a1\'ad\'a1\'eb\'a1\'e4\'a1\'e5\'a1\'e6\'a1\'c3\'a1\'a2\'a1\'a3\'a1\'a8\'a1\'b5\'a1\'b7\'a1\'b9\'a1\'bb\'a1\'bf\'a1\'b3\'a1\'bd\'a8\'95\'a6\'e1\'a6\'e3\'a6\'e7\'a6\'e5\'a6\'eb\'a9\'77\'a9\'79\'a9\'7b\'a3\'a1\'a3\'a2\'a3\'a5\'a3\'a7\'a3\'a9\'a3\'ac\'a3\'ae\'a3\'ba\'a3\'bb\'a3\'bf\'a3\'dd\'a3\'e0\'a3\'fc\'a3\'fd\'a1\'ab\'a1\'e9}}
+{\*\mmathPr\mnaryLim0\mdispDef1\mwrapIndent1440 }\viewkind4\uc1 
+\pard\nowidctlpar\qj\kerning2\f0\fs24\'be\'5c\'c5\'aa\'a5\'bb\'a4\'e5\'ae\'c9\'bd\'d0\'b3\'cc\'a4\'6a\'a4\'c6\'b5\'f8\'b5\'a1\f1 (WinPE\f0\'bb\'73\'a7\'40\'a1\'42\'a8\'74\'b2\'ce\'a9\'77\'a8\'ee\'a4\'48\'ad\'fb\'c0\'b3\'b8\'d3\'ac\'dd\cf1\f1 Languages\f0\'a5\'d8\'bf\'fd\'a4\'55\'aa\'ba\'b3\'5d\'a9\'77\'c0\'c9\cf0\'a9\'4d\cf1\'a5\'bb\'a4\'e5\'aa\'ba\cf0\f1 [\cf2\f0\'b0\'d1\'bc\'c6\lang2052\'bb\'a1\'a9\'fa\f1 ]\cf0\lang1033 )\par
+\fs21\par
+
+\pard\nowidctlpar\qc\cf3\b\fs32 WimTool\f0\'ac\'4f\'b0\'f2\'a9\'f3\f1 WIMGAPI\f0\lang2052\'a9\'4d\f1\lang1033 WIMLIB\f0\'b6\'7d\'b5\'6f\'aa\'ba\f1 Win32\f0\'b5\'7b\'a6\'a1\cf0\b0\f1\fs21\par
+
+\pard\nowidctlpar\qj\cf2\b\f0\fs24\'a4\'40\'a1\'42\'b0\'f2\'a5\'bb\'a4\'b6\'b2\'d0\f1\par
+\cf1\b0 1\f0\'a1\'42\'a5\'5c\'af\'e0\'b1\'6a\'a4\'6a\f1\par
+
+\pard\nowidctlpar\fi315\qj\cf4\f0\u9332?\'a1\'44\'a4\'e4\'ab\'f9\cf1\'b1\'be\'b8\'fc\'a1\'42\'a8\'f8\'b8\'fc\'a1\'42\'ae\'b7\'c0\'f2\'a1\'42\'b8\'d1\'c0\'a3\'a1\'42\'b6\'d7\'a5\'58\'a1\'42\'be\'c9\'a4\'4a\'a1\'42\'a6\'58\'a8\'d6\'a1\'42\'a4\'c0\'b3\'ce\'a1\'42\'c0\'a3\'c1\'59\'c3\'fe\'ab\'ac\'c2\'e0\'b4\'ab\'a1\'42\'ac\'4d\'ae\'67\'c5\'e9\'bf\'6e\'c0\'75\'a4\'c6\'a1\'42\'ac\'4d\'ae\'67\'bc\'57\'b6\'71\'b3\'c6\'a5\'f7\cf4\'b5\'a5\'b9\'ef\f1 WIM\f0\'ac\'4d\'ae\'67\'aa\'ba\'b3\'42\'b2\'7a\'be\'de\'a7\'40\'a1\'41\'a5\'5d\'ac\'41\f1 LZMS\f0\'c0\'a3\'c1\'59\'c3\'fe\'ab\'ac\'aa\'ba\cf1\f1 ESD\cf4\f0\'c0\'c9\'a1\'46\f1\par
+\f0\u9333?\'a1\'44\'a4\'e4\'b4\'a9\cf1\'ac\'79\'c4\'fd\'a1\'42\'b4\'a3\'a8\'fa\'a1\'42\'b0\'6c\'a5\'5b\'a1\'42\'a7\'ef\'a6\'57\'a1\'42\'a7\'52\'b0\'a3\cf4\f1 WIM\f0\'a4\'ba\'aa\'ba\'a6\'55\'a8\'f7\'b8\'ea\'b0\'54\'a9\'4d\'c0\'c9\'a5\'d8\'bf\'fd\'a1\'46\f1\par
+\f0\u9334?\'a1\'44\'a4\'e4\'b4\'a9\cf1\'bd\'75\'a4\'57\'bc\'f6\'b3\'c6\'a5\'f7\cf4\'b7\'ed\'ab\'65\'b5\'77\'ba\'d0\'aa\'ba\f1 Window\f0\'a8\'74\'b2\'ce\'a1\'41\'b5\'4c\'bb\'dd\'b1\'d2\'b0\'ca\f1 WinPE\f0\'a7\'59\'a5\'69\'b9\'ef\'a7\'41\'aa\'ba\'a8\'74\'b2\'ce\'b6\'69\'a6\'e6\'b3\'c6\'a5\'f7\'a1\'46\f1\par
+\f0\u9335?\'a1\'44\'b5\'4c\'bd\'d7\'ac\'4f\'b3\'c6\'a5\'f7\'a8\'74\'b2\'ce\'c1\'d9\'ac\'4f\'ab\'ec\'b4\'5f\'a8\'74\'b2\'ce\'a1\'41\f1 WimTool\f0\'b3\'a3\'af\'e0\'b3\'71\'b9\'4c\'b3\'5d\'a9\'77\'c0\'c9\'a9\'77\'b8\'71\'aa\'ba\'b3\'57\'ab\'68\'a1\'41\'b9\'ef\'b3\'c6\'a5\'f7\'a1\'42\'ab\'ec\'b4\'5f\'b6\'69\'a6\'e6\cf1\'c0\'c9\'a5\'d8\'bf\'fd\'aa\'ba\'bf\'7a\'bf\'ef\'b1\'c6\'b0\'a3\cf4\'a1\'41\'c1\'d7\'a7\'4b\'b1\'4e\'a4\'a3\'bb\'dd\'ad\'6e\'aa\'ba\'c0\'c9\'a5\'d8\'bf\'fd\'c0\'a3\'a8\'ee\'a8\'ec\'b3\'c6\'a5\'f7\'aa\'ba\f1 WIM\f0\'a4\'a4\'a1\'46\f1\par
+
+\pard\nowidctlpar\qj\cf1 2\f0\'a1\'42\'b0\'aa\'ae\'c4\'a7\'d6\'b3\'74\f1\par
+
+\pard\nowidctlpar\fi420\qj\cf4\f0\'af\'c2\f1  Win32 C++ \f0\'a5\'4e\'bd\'58\'a1\'41\'b5\'4c\'bb\'dd\f1  Net \f0\'ae\'77\'a9\'4d\f1  VC \f0\'b9\'42\'a6\'e6\'ae\'77\'a1\'41\'a6\'62\cf1\'b7\'a5\'ab\'d7\'ba\'eb\'c2\'b2\'aa\'ba\'a8\'74\'b2\'ce\'a9\'4d\f1 WinPE\f0\'a8\'74\'b2\'ce\'a4\'a4\'b3\'a3\'af\'e0\'b9\'42\'a6\'e6\cf4\'a1\'46\f1\par
+
+\pard\nowidctlpar\qj\cf1 3\f0\'a1\'42\'be\'de\'a7\'40\'c2\'b2\'b3\'e6\f1\par
+\cf4    Windows \f0\'b9\'cf\'a7\'ce\cf1\'b5\'f8\'b5\'a1\'a4\'b6\'ad\'b1\cf4\'a1\'41\'b3\'71\'b9\'4c\cf1\'b7\'c6\'b9\'ab\'c2\'49\'c0\'bb\'a1\'42\'bc\'75\'a5\'58\'a5\'5c\'af\'e0\'aa\'ed\'a1\'42\'b7\'c6\'b9\'ab\'a9\'ec\'ab\'fb\cf4\'a7\'59\'a5\'69\'b9\'ef\f1 WIM\f0\'c0\'c9\'b6\'69\'a6\'e6\'a6\'55\'ba\'d8\'be\'de\'a7\'40\'a1\'41\'ac\'d9\'a5\'68\'a4\'46\'b0\'4f\'be\'d0\'a6\'55\'ba\'d8\'a9\'52\'a5\'4f\'a6\'43\'aa\'ba\'b7\'d0\'b4\'6f\'a1\'46\f1\par
+\cf1 4\f0\'a1\'42\'af\'53\'a6\'e2\'c2\'58\'ae\'69\f1\par
+\cf0    \cf4 WimTool \cf5\f0\'a4\'e4\'ab\'f9\'b5\'b9\'a8\'43\'a4\'40\'ad\'d3\f1  WIM \f0\'a9\'ce\f1  ESD \f0\'c0\'c9\'b3\'5d\'b8\'6d\'a4\'a3\'a6\'50\'aa\'ba\'b9\'cf\'a5\'dc\cf4\'a1\'41\'a6\'50\'ae\'c9\'a4\'ba\'b8\'6d\cf5\'b9\'cf\'a5\'dc\'b4\'a3\'a8\'fa\'be\'b9\'a9\'4d\'b9\'cf\'a4\'f9\'c2\'e0\'b4\'ab\'a6\'a8\'b9\'cf\'a5\'dc\cf4\'aa\'ba\'a5\'5c\'af\'e0\'a1\'46\f1\par
+
+\pard\nowidctlpar\fi360\qj\f0\'a4\'5d\'a5\'69\'b3\'71\'b9\'4c\f1 [\f0\'a5\'7e\'b4\'df\'b0\'f5\'a6\'e6\'c2\'58\'ae\'69\f1 ]\cf5\f0\'b1\'4e\'a4\'40\'a8\'c7\'b3\'6e\'c5\'e9\'b0\'b5\'a6\'a8\'ba\'f1\'a6\'e2\'b3\'e6\'c0\'c9\'ae\'d7\'c0\'a3\'c1\'59\'aa\'a9\cf4\'a1\'41\'ad\'ec\'b2\'7a\'ac\'4f\'b3\'71\'b9\'4c\'b1\'be\'b8\'fc\'a8\'ec\'ab\'fc\'a9\'77\'a5\'d8\'bf\'fd\'ab\'e1\'a6\'41\'b0\'f5\'a6\'e6\'ac\'59\'ad\'d3\'a9\'52\'a5\'4f\'a1\'41\cf5\'b3\'6f\'ba\'d8\'b3\'e6\'c0\'c9\'ae\'d7\'c0\'a3\'c1\'59\'aa\'a9\'a5\'69\'c1\'d7\'a7\'4b\'b1\'fe\'ac\'72\'a4\'75\'a8\'e3\'aa\'ba\'ac\'64\'b1\'fe\cf4\'a1\'46\f1\par
+
+\pard\nowidctlpar\qj\cf1 5\f0\'a1\'42\'b0\'d1\'bc\'c6\'c2\'d7\'b4\'49\f1\par
+\cf0    \cf4 WimTool \f0\'c1\'d9\'a6\'b3\cf5\'c2\'d7\'b4\'49\'aa\'ba\'a9\'52\'a5\'4f\'a6\'43\'b0\'d1\'bc\'c6\cf4\'a1\'41\'b0\'f2\'a5\'bb\'ac\'4f\'a7\'74\'bb\'5c\'a4\'46\f1  Imagex.EXE \f0\'a9\'4d\f1  WimLib-Imagex.EXE \f0\'a9\'d2\'a6\'b3\'a9\'52\'a5\'4f\'a6\'43\'b0\'d1\'bc\'c6\'aa\'ba\'a5\'5c\'af\'e0\f1 (\f0\'a8\'a3\'b2\'c4\'a5\'7c\'a1\'42\'a4\'ad\'c2\'49\'a1\'41\cf5\'b0\'d1\'bc\'c6\'c2\'b2\'a4\'b6\cf0\'a9\'4d\cf5\'b0\'d1\'bc\'c6\'bb\'a1\'a9\'fa\cf4\f1 )\f0\'a1\'43\cf0\f1\par
+\cf2\b\par
+\f0\'a4\'47\'a1\'42\'b9\'42\'a6\'e6\'c0\'f4\'b9\'d2\f1\par
+
+\pard\nowidctlpar\fi420\qj\cf0\b0\f0\'a4\'e4\'b4\'a9\f1 Windows 7\f0\'a1\'e3\f1 Windows 11\f0\'a4\'ce\'a5\'a6\'ad\'cc\'ac\'db\'c0\'b3\'aa\'ba\f1 PE\f0\'a8\'74\'b2\'ce\'a1\'41\'a6\'62\'a4\'57\'ad\'7a\'a8\'74\'b2\'ce\'a4\'a4\'a6\'77\'b8\'cb\f1 WimMount\f0\'a4\'b8\'a5\'f3\'ab\'e1\'a5\'69\'a5\'48\'a8\'cf\'a5\'ce\'a5\'fe\'b3\'a1\'a5\'5c\'af\'e0\'a1\'46\'a6\'70\'aa\'47\'a8\'53\'a6\'b3\'a6\'77\'b8\'cb\f1 WimMount\f0\'a4\'b8\'a5\'f3\'a1\'41\'a4\'5d\'a5\'69\'a8\'cf\'a5\'ce\'a4\'6a\'b3\'a1\'a4\'c0\'b1\'60\'a5\'ce\'a5\'5c\'af\'e0\f1 (\f0\'b1\'be\'b8\'fc\'a1\'42\'a8\'f8\'b8\'fc\'b0\'a3\'a5\'7e\f1 )\f0\'a1\'43\f1\par
+
+\pard\nowidctlpar\qj\par
+\cf2\b\f0\'a4\'54\'a1\'42\'a4\'e5\'a5\'f3\'bb\'a1\'a9\'fa\f1\par
+\cf0\b0 1\f0\'a1\'42\'a5\'bb\'a4\'75\'a8\'e3\'a5\'d1\'a5\'44\'b5\'7b\'a7\'c7\f1  \cf1 WimTool.EXE\cf0\f0\'a1\'42\'c2\'58\'ae\'69\'bc\'d2\'b2\'d5\f1  \cf1 WimShExt.DLL\cf0\f0\'a1\'42\'c0\'b0\'a7\'55\'bb\'a1\'a9\'fa\'a4\'e5\'a5\'f3\f1 (\f0\'a7\'59\'a5\'bb\'a4\'e5\'a1\'41\cf1\f1 RTF\f0\'ae\'e6\'a6\'a1\cf0\f1 )\f0\'a1\'42\'bb\'79\'a8\'a5\'b8\'ea\'b7\'bd\'c0\'c9\f1 (\cf1 INI\f0\'a4\'e5\'a5\'bb\cf0\'ae\'e6\'a6\'a1\f1 )\f0\'a6\'40\'a5\'7c\'ad\'d3\'c0\'c9\'b2\'d5\'a6\'a8\'a1\'41\f1\par
+
+\pard\nowidctlpar\fi360\qj\f0\'a8\'e4\'a4\'a4\'aa\'ba\cf1\u-30036?\'a9\'fa\'bb\'a1\'a9\'fa\cf0\'a4\'e5\'a5\'f3\'a9\'4d\cf1\'bb\'79\'a8\'a5\'b8\'ea\'b7\'bd\cf0\'c0\'c9\'a6\'ec\'a9\'f3\f1  \cf1 Languages\cf0  \f0\'a5\'d8\'bf\'fd\'a4\'55\'a1\'43\f1\par
+
+\pard\nowidctlpar\qj 2\f0\'a1\'42\'a5\'44\'b5\'7b\'a7\'c7\f1 WimTool.EXE\f0\'a1\'42\'c2\'58\'ae\'69\'bc\'d2\'b2\'d5\f1 WimShExt.DLL\f0\'a4\'c0\'ac\'b0\f1 x64\f0\'a1\'42\f1 x86\f0\'a8\'e2\'ba\'d8\'aa\'a9\'a5\'bb\'a1\'41\u-30036?\'a9\'fa\'bb\'a1\'a9\'fa\'a4\'e5\'a5\'f3\'a9\'4d\'bb\'79\'a8\'a5\'b8\'ea\'b7\'bd\'c0\'c9\'a4\'a3\'b0\'cf\'a4\'c0\f1 x64\f0\'a1\'42\f1 x86\f0\'aa\'a9\'a5\'bb\'a1\'41\'c2\'b2\'c5\'e9\'a4\'a4\'a4\'e5\'ac\'b0\'a4\'ba\'b8\'6d\'aa\'a9\'a5\'bb\'a1\'43\f1\par
+3\f0\lang2052\'a1\'42\'a4\'a3\'ba\'de\'ac\'4f\f1\lang1033 x64\f0\'aa\'a9\'a5\'bb\lang2052\'a9\'ce\'ac\'4f\f1\lang1033 x86\f0\'aa\'a9\'a5\'bb\'a1\'41\'a5\'44\'b5\'7b\'a7\'c7\f1 WimTool.EXE\f0\'a1\'42\'c2\'58\'ae\'69\'bc\'d2\'b2\'d5\f1 WimShExt.DLL\f0\lang2052\'b3\'6f\'a8\'e2\'ad\'d3\'c0\'c9\'a4\'a3\'af\'e0\'a7\'ef\'a6\'57\lang1033\'a1\'41\f1 Languages\f0\'a5\'d8\'bf\'fd\'a4\'55\'a1\'41\lang2052\'a8\'43\'a4\'40\'ba\'d8\'bb\'79\'a8\'a5\'aa\'ba\lang1033\u-30036?\'a9\'fa\'bb\'a1\'a9\'fa\'a4\'e5\'a5\'f3\lang2052\'a9\'4d\lang1033\'bb\'79\'a8\'a5\'b8\'ea\'b7\'bd\'c0\'c9\lang2052\'aa\'ba\'c0\'c9\'b0\'f2\'a5\'bb\'a6\'57\'ad\'6e\'ac\'db\'a6\'50\'a1\'43\f1\lang1033\par
+
+\pard\nowidctlpar\fi360\qj\f0\lang2052\'a8\'cf\'a5\'ce\'aa\'cc\'a5\'69\'a5\'48\'a6\'db\'a6\'e6\'bc\'57\'b4\'ee\'a4\'a3\'a6\'50\'bb\'79\'a8\'a5\'aa\'ba\lang1033\u-30036?\'a9\'fa\'bb\'a1\'a9\'fa\'a4\'e5\lang2052\'a9\'4d\lang1033\'bb\'79\'a8\'a5\'b8\'ea\'b7\'bd\'c0\'c9\'a1\'41\'c2\'b2\'c5\'e9\'a4\'a4\'a4\'e5\'a8\'74\'b2\'ce\'a5\'69\'a5\'48\'a7\'52\'b0\'a3\cf1\f1 Languages\cf0\f0\'a5\'d8\'bf\'fd\'a1\'41\lang2052\'a6\'fd\'b9\'ef\'a5\'7e\'b5\'6f\'a6\'e6\'aa\'ba\'c0\'c9\'a5\'5d\'a5\'b2\'b6\'b7\'ab\'4f\'c3\'d2\'c0\'c9\'a5\'d8\'bf\'fd\'aa\'ba\'a7\'b9\'be\'e3\'a9\'ca\'a9\'4d\'b3\'57\'bd\'64\'a9\'ca\'a1\'43\f1\lang1033\par
+
+\pard\nowidctlpar\qj\cf2\b\par
+\f0\'a5\'7c\'a1\'42\'b0\'d1\'bc\'c6\lang2052\'c2\'b2\'a4\'b6\cf0\b0\f1\lang1033\par
+
+\pard\nowidctlpar\fi420\qj WimTool\f0\'a9\'52\'a5\'4f\'a6\'43\'a6\'b3\f1 3\f0\'c3\'fe\'b0\'d1\'bc\'c6\'a1\'47\cf1\f1 <\f0\'a5\'5c\'af\'e0\'b0\'d1\'bc\'c6\f1 >\cf0\f0\'a1\'42\cf6\f1 <\f0\'a5\'b2\'bb\'dd\'b0\'d1\'bc\'c6\f1 >\cf0\f0\'a1\'42\f1 [\f0\'a5\'69\'bf\'ef\'b0\'d1\'bc\'c6\f1 ]\f0\'a1\'43\'a6\'79\'ac\'41\'a9\'b7\f1 "< >"\f0\'a4\'ba\'aa\'ba\'b0\'d1\'bc\'c6\cf4\'a4\'a3\'af\'e0\'ac\'d9\'b2\'a4\cf0\'a1\'41\'a4\'e8\'ac\'41\'b8\'b9\f1 "[ ]"\f0\'a4\'ba\'aa\'ba\'b0\'d1\'bc\'c6\'aa\'ed\'a5\'dc\'a5\'69\'a5\'48\'ac\'d9\'b2\'a4\'a1\'41\'a4\'c0\'b9\'6a\'b8\'b9\f1 "|"\f0\'b6\'a1\'aa\'ba\'b0\'d1\'bc\'c6\'a5\'75\'a8\'fa\'a8\'e4\'a4\'40\'a1\'43\f1\par
+
+\pard\nowidctlpar\qj 1\f0\'a1\'42\cf1\f1 <\f0\'a5\'5c\'af\'e0\'b0\'d1\'bc\'c6\f1 >\par
+
+\pard\nowidctlpar\fi420\qj\cf4 WimTool\f0\'aa\'ba\'b2\'c4\f1 1\f0\'ad\'d3\'b0\'d1\'bc\'c6\'a1\'41\'aa\'ed\'a5\'dc\f1 WimTool\f0\'a6\'62\'b0\'f5\'a6\'e6\'aa\'ba\'a5\'5c\'af\'e0\'a5\'f4\'b0\'c8\'a1\'41\'a4\'a3\'af\'e0\'ac\'d9\'b2\'a4\'a1\'41\f1 20\f0\'ad\'d3\cf1\f1 <\f0\'a5\'5c\'af\'e0\'b0\'d1\'bc\'c6\f1 >\cf4\f0\'a7\'40\'a5\'ce\'a6\'70\'a4\'55\'a1\'47\f1\par
+\trowd\trgaph108\trleft-108\trbrdrl\brdrs\brdrw10 \trbrdrt\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trpaddl108\trpaddr108\trpaddfl3\trpaddfr3
+\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx709\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx2410\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx4111\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx5812\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx7513\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx9498\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx10773\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx12333\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx14034\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx15735\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx17436 
+\pard\intbl\nowidctlpar\qj\f0\'b0\'d1\'bc\'c6\f1\cell 
+\pard\intbl\nowidctlpar /Mount\cell /MountRW\cell /ReMount\cell /UnMount\cell /CleanUp\cell /Apply\cell /ExtrImage\cell /Capture\cell /WimTemp\cell /ExtrPath\cell\row\trowd\trgaph108\trleft-108\trbrdrl\brdrs\brdrw10 \trbrdrt\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trpaddl108\trpaddr108\trpaddfl3\trpaddfr3
+\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx709\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx2410\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx4111\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx5812\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx7513\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx9498\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx10773\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx12333\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx14034\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx15735\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx17436 
+\pard\intbl\nowidctlpar\qj\f0\'a5\'5c\'af\'e0\f1\cell\f0\'b0\'df\'c5\'aa\'b1\'be\'b8\'fc\'ac\'4d\'ae\'67\f1\cell\f0\'a5\'69\'bc\'67\'b1\'be\'b8\'fc\'ac\'4d\'ae\'67\f1\cell\f0\'ad\'ab\'b7\'73\'b1\'be\'b8\'fc\'ac\'4d\'ae\'67\f1\cell\f0\'a8\'f8\'b8\'fc\'ac\'4d\'ae\'67\f1\cell\f0\'b2\'4d\'b0\'a3\'b5\'4c\'ae\'c4\'b1\'be\'b8\'fc\f1\cell\f0\'b8\'d1\'b6\'7d\'ac\'4d\'ae\'67\f1\cell\f0\'b8\'d1\'b6\'7d\'ac\'4d\'ae\'67\f1\cell\f0\'bb\'73\'a7\'40\'ac\'4d\'ae\'67\f1\cell\f0\'b3\'5d\'b8\'6d\'a4\'75\'a7\'40\'a5\'d8\'bf\'fd\f1\cell\f0\'b4\'a3\'a8\'fa\'c0\'c9\'a5\'d8\'bf\'fd\f1\cell\row 
+\pard\nowidctlpar\qj\par
+\trowd\trgaph108\trleft-108\trbrdrl\brdrs\brdrw10 \trbrdrt\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trpaddl108\trpaddr108\trpaddfl3\trpaddfr3
+\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx709\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx2410\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx4111\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx5812\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx7513\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx9498\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx10773\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx12333\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx14034\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx15735\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx17436 
+\pard\intbl\nowidctlpar\qj\f0\'b0\'d1\'bc\'c6\f1\cell 
+\pard\intbl\nowidctlpar /CompPath\cell /Append\cell /Register\cell /Unload\cell /Remove\cell /Split\cell /Export\cell /Icon\cell /MountPath\cell /AppenPath\cell\row\trowd\trgaph108\trleft-108\trbrdrl\brdrs\brdrw10 \trbrdrt\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trpaddl108\trpaddr108\trpaddfl3\trpaddfr3
+\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx709\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx2410\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx4111\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx5812\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx7513\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx9498\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx10773\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx12333\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx14034\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx15735\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx17436 
+\pard\intbl\nowidctlpar\qj\f0\'a5\'5c\'af\'e0\f1\cell\f0\'bb\'73\'a7\'40\'ac\'4d\'ae\'67\f1\cell\f0\'b0\'6c\'a5\'5b\'ac\'4d\'ae\'67\f1\cell\f0\'b5\'f9\'a5\'55\'c2\'58\'ae\'69\'a5\'5c\'af\'e0\f1\cell\f0\'a8\'f8\'b8\'fc\'c2\'58\'ae\'69\'a5\'5c\'af\'e0\f1\cell 
+\pard\intbl\nowidctlpar\f0\'b2\'be\'b0\'a3\f1 WIM\f0\'a4\'ba\'b6\'b5\'a5\'d8\f1\cell 
+\pard\intbl\nowidctlpar\qj\f0\'a4\'c0\'b3\'ce\'ac\'4d\'ae\'67\f1\cell\f0\'b6\'d7\'a5\'58\'a6\'58\'a8\'d6\f1\cell\f0\'ad\'ab\'ab\'d8\'b9\'cf\'a5\'dc\'bd\'77\'a6\'73\f1\cell\f0\'b3\'5d\'b8\'6d\'b1\'be\'b8\'fc\'a5\'d8\'bf\'fd\f1\cell\f0\'b0\'6c\'a5\'5b\'c0\'c9\'a5\'d8\'bf\'fd\f1\cell\row 
+\pard\nowidctlpar\cf0 2\f0\'a1\'42\cf6\f1 <\f0\'a5\'b2\'bb\'dd\'b0\'d1\'bc\'c6\f1 >\cf7\par
+
+\pard\nowidctlpar\fi315\cf4\f0\'ba\'f2\'b8\'f2\cf1\f1 <\f0\'a5\'5c\'af\'e0\'b0\'d1\'bc\'c6\f1 >\cf4\f0\'a4\'a7\'ab\'e1\'a1\'41\'a4\'40\'af\'eb\'a6\'b3\f1 1\f0\'a1\'e3\f1 2\f0\'ad\'d3\cf6\f1 <\f0\'a5\'b2\'bb\'dd\'b0\'d1\'bc\'c6\f1 >\cf4\f0\'a1\'41\'aa\'ed\'a5\'dc\'be\'de\'a7\'40\'aa\'ba\'aa\'ab\'a5\'f3\'a1\'41\'a6\'70\'c0\'c9\'a1\'42\'a5\'d8\'bf\'fd\'a1\'42\'a8\'f7\'b8\'b9\'b5\'a5\'a1\'41\'a6\'62\cf6\f1 [\f0\'ac\'4d\'ae\'67\'a8\'f7\'b8\'b9\f1 |\f0\'ac\'4d\'ae\'67\'a8\'f7\'a6\'57\f1 ]\cf4\f0\'a4\'47\'bf\'ef\'a4\'40\'b0\'d1\'bc\'c6\'a4\'a4\'a1\'41\'ab\'d8\'c4\'b3\'a8\'cf\'a5\'ce\cf6\'ac\'4d\'ae\'67\'a8\'f7\'b8\'b9\cf4\'a1\'43\cf7\f1\par
+
+\pard\nowidctlpar\cf0 3\f0\'a1\'42\f1 [\f0\'a5\'69\'bf\'ef\'b0\'d1\'bc\'c6\f1 ]\par
+
+\pard\nowidctlpar\fi315 [\f0\'a5\'69\'bf\'ef\'b0\'d1\'bc\'c6\f1 ]\f0\'a6\'62\f1 WimTool\f0\'a9\'52\'a5\'4f\'a6\'43\'aa\'ba\'b3\'cc\'ab\'e1\'a1\'41\'a5\'69\'a6\'b3\'a5\'69\'b5\'4c\'a1\'41\'a5\'ce\'a9\'f3\'aa\'ed\'a5\'dc\f1 WimTool\f0\'b0\'f5\'a6\'e6\'aa\'ba\'a8\'e4\'a5\'a6\'a5\'5c\'af\'e0\'a1\'43\f1\par
+
+\pard\nowidctlpar\par
+\cf2\b\f0\'a4\'ad\'a1\'42\'b0\'d1\'bc\'c6\lang2052\'bb\'a1\'a9\'fa\f1\lang1033\par
+\cf0\b0 1\f0\'a1\'42\'b1\'be\'b8\'fc\'ac\'4d\'ae\'67\f1\par
+
+\pard\nowidctlpar\fi315\f0\u9332?\'a1\'42\'b0\'df\'c5\'aa\'b1\'be\'b8\'fc\f1\par
+
+\pard\nowidctlpar\fi735\f0\'ae\'e6\'a6\'a1\'a1\'47\f1 WimTool.EXE  \cf1 /Mount\cf0   \cf6 <\f0\'ac\'4d\'ae\'67\'c0\'c9\f1 [,\f0\'ac\'4d\'ae\'67\'a8\'f7\'b8\'b9\f1 |\f0\'ac\'4d\'ae\'67\'a8\'f7\'a6\'57\f1 ]>  <\f0\'a5\'d8\'bc\'d0\'b8\'f4\'ae\'7c\f1 >\cf0\par
+\f0\'aa\'60\'b7\'4e\'a1\'47\'ac\'4d\'ae\'67\'a8\'f7\'b8\'b9\'a9\'ce\'ac\'4d\'ae\'67\'a8\'f7\'a6\'57\'a5\'75\'a8\'fa\'a8\'e4\'a4\'40\'a1\'41\'ac\'4d\'ae\'67\'c0\'c9\'a9\'4d\'ac\'4d\'ae\'67\'a8\'f7\'b8\'b9\f1 (\f0\'a9\'ce\'ac\'4d\'ae\'67\'a8\'f7\'a6\'57\f1 )\f0\'a6\'58\'ac\'b0\'a4\'40\'ad\'d3\cf6\'a5\'b2\'bb\'dd\'b0\'d1\'bc\'c6\cf0\'a1\'41\'a4\'a7\'b6\'a1\'a5\'ce\f1 ","\f0\'b3\'73\'b1\'b5\'a1\'46\'c0\'c9\'a5\'d8\'bf\'fd\'a6\'57\'a6\'70\'a6\'b3\'aa\'c5\'ae\'e6\'a1\'41\'a5\'b2\'b6\'b7\'a5\'ce\'c2\'f9\'a4\'de\'b8\'b9\f1 " "\f0\'a5\'5d\'b3\'f2\'a1\'43\f1\par
+\f0\'a5\'dc\'a8\'d2\'a1\'47\f1 WimTool.EXE  \cf1 /Mount\cf0   \cf6 "F:\\My Tools.WIM,2"  R:\\\f0\'a4\'75\'a8\'e3\'bd\'63\cf0\f1\par
+
+\pard\nowidctlpar\fi315\f0\u9333?\'a1\'42\'a5\'69\'bc\'67\'b1\'be\'b8\'fc\f1\par
+
+\pard\nowidctlpar\fi735\f0\'ae\'e6\'a6\'a1\'a1\'47\f1 WimTool.EXE  \cf1 /MountRW\cf0  \cf8  \cf6 <\f0\'ac\'4d\'ae\'67\'c0\'c9\f1 [,\f0\'ac\'4d\'ae\'67\'a8\'f7\'b8\'b9\f1 |\f0\'ac\'4d\'ae\'67\'a8\'f7\'a6\'57\f1 ]>  <\f0\'a5\'d8\'bc\'d0\'b8\'f4\'ae\'7c\f1 >\cf0\par
+\f0\'aa\'60\'b7\'4e\'a1\'47\'ac\'4d\'ae\'67\'a8\'f7\'b8\'b9\'a9\'ce\'ac\'4d\'ae\'67\'a8\'f7\'a6\'57\'a5\'75\'a8\'fa\'a8\'e4\'a4\'40\'a1\'41\'ac\'4d\'ae\'67\'c0\'c9\'a9\'4d\'ac\'4d\'ae\'67\'a8\'f7\'b8\'b9\f1 (\f0\'a9\'ce\'ac\'4d\'ae\'67\'a8\'f7\'a6\'57\f1 )\f0\'a6\'58\'ac\'b0\'a4\'40\'ad\'d3\cf6\'a5\'b2\'bb\'dd\'b0\'d1\'bc\'c6\cf0\'a1\'41\'a4\'a7\'b6\'a1\'a5\'ce\f1 ","\f0\'b3\'73\'b1\'b5\'a1\'46\'c0\'c9\'a5\'d8\'bf\'fd\'a6\'57\'a6\'70\'a6\'b3\'aa\'c5\'ae\'e6\'a1\'41\'a5\'b2\'b6\'b7\'a5\'ce\'c2\'f9\'a4\'de\'b8\'b9\f1 " "\f0\'a5\'5d\'b3\'f2\'a1\'43\f1\par
+\f0\'a5\'dc\'a8\'d2\'a1\'47\f1 WimTool.EXE  \cf1 /MountRW\cf0   \cf6 "F:\\My Tools.WIM,2"  R:\\\f0\'a4\'75\'a8\'e3\'bd\'63\cf0\f1\par
+
+\pard\nowidctlpar\fi315\f0\u9334?\'a1\'42\'ad\'ab\'b7\'73\'b1\'be\'b8\'fc\f1\par
+
+\pard\nowidctlpar\fi735\f0\'ae\'e6\'a6\'a1\'a1\'47\f1 WimTool.EXE  \cf1 /ReMount\cf0  [\f0\'a5\'d8\'bc\'d0\'b8\'f4\'ae\'7c\f1 ]\par
+\f0\'bb\'a1\'a9\'fa\'a1\'47\'ad\'ab\'b7\'73\'b1\'be\'b8\'fc\'ac\'4f\'b1\'4e\'ab\'fc\'a9\'77\f1 "\f0\'a5\'a2\'ae\'c4\'b1\'be\'b8\'fc\f1 "\f0\'a6\'41\'a6\'b8\'b1\'be\'b8\'fc\'a1\'41\cf4\'ac\'d9\'b2\'a4\cf0\f1 [\f0\'a5\'d8\'bc\'d0\'b8\'f4\'ae\'7c\f1 ]\f0\'ae\'c9\'ad\'ab\'b7\'73\'b1\'be\'b8\'fc\'a9\'d2\'a6\'b3\'aa\'ba\f1 "\f0\'a5\'a2\'ae\'c4\'b1\'be\'b8\'fc\f1 "\f0\'a1\'43\f1\par
+\f0\'a5\'dc\'a8\'d2\'a1\'47\f1 WimTool.EXE  \cf1 /ReMount\cf0\par
+
+\pard\nowidctlpar 2\f0\'a1\'42\'a8\'f8\'b8\'fc\'ac\'4d\'ae\'67\f1\par
+   \f0\u9332?\'a1\'42\'a8\'f8\'b8\'fc\'ab\'fc\'a9\'77\'ac\'4d\'ae\'67\f1\par
+
+\pard\nowidctlpar\fi735\f0\'ae\'e6\'a6\'a1\'a1\'47\f1 WimTool.EXE  \cf1 /UnMount\cf0  \cf6 <\f0\'a5\'d8\'bc\'d0\'b8\'f4\'ae\'7c\f1 |/All>\cf0   [/Commit|/Update]\par
+\f0\'bb\'a1\'a9\'fa\'a1\'47\f1 <\f0\'a5\'d8\'bc\'d0\'b8\'f4\'ae\'7c\f1 >\f0\'ac\'b0\f1 "/All"\f0\'ae\'c9\'aa\'ed\'a5\'dc\'b0\'df\'c5\'aa\'a8\'f8\'b8\'fc\'a9\'d2\'a6\'b3\'aa\'ba\'b1\'be\'b8\'fc\'ac\'4d\'ae\'67\'a1\'46\f1 "/Commit "\f0\'aa\'ed\'a5\'dc\'a5\'69\'bc\'67\'a8\'f8\'b8\'fc\'b1\'be\'b8\'fc\'a5\'d8\'bf\'fd\'aa\'ba\'ac\'4d\'ae\'67\'a1\'41\f1 "/Update"\f0\'aa\'ed\'a5\'dc\'b8\'df\'b0\'dd\'a5\'69\'bc\'67\'a8\'f8\'b8\'fc\'ab\'fc\'a9\'77\'aa\'ba\'a5\'d8\'bf\'fd\'a1\'43\f1\par
+\f0\'a5\'dc\'a8\'d2\'a1\'47\f1 WimTool.EXE  \cf1 /UnMount\cf0   \cf6 R:\\\f0\'a4\'75\'a8\'e3\'bd\'63\cf0\f1   /Commit\par
+\f0\'a5\'dc\'a8\'d2\'a1\'47\f1 WimTool.EXE  \cf1 /UnMount\cf0   \cf6 R:\\\f0\'a4\'75\'a8\'e3\'bd\'63\cf0\f1\par
+\f0\'a5\'dc\'a8\'d2\'a1\'47\f1 WimTool.EXE  \cf1 /UnMount\cf0   /All\par
+
+\pard\nowidctlpar    \f0\u9333?\'a1\'42\'b2\'4d\'b0\'a3\'b5\'4c\'ae\'c4\'b1\'be\'b8\'fc\f1\par
+
+\pard\nowidctlpar\fi735\f0\'ae\'e6\'a6\'a1\'a1\'47\f1 WimTool.EXE  \cf1 /CleanUp\cf0\par
+
+\pard\nowidctlpar 3\f0\'a1\'42\'b8\'d1\'b6\'7d\'ac\'4d\'ae\'67\f1\par
+
+\pard\nowidctlpar\fi315\f0\u9332?\f1 . \f0\'c0\'52\'c0\'71\'a4\'e8\'a6\'a1\'a1\'41\'a4\'a3\'b4\'a3\'a8\'d1\'b3\'42\'b2\'7a\'b6\'69\'ab\'d7\f1\par
+
+\pard\nowidctlpar\fi630\f0\'ae\'e6\'a6\'a1\'a1\'47\f1 WimTool.EXE  \cf1 /Apply\cf0  \cf6 <\f0\'ac\'4d\'ae\'67\'c0\'c9\f1 [,\f0\'ac\'4d\'ae\'67\'a8\'f7\'b8\'b9\f1 |\f0\'ac\'4d\'ae\'67\'a8\'f7\'a6\'57\f1 ]> <\f0\'a5\'d8\'bc\'d0\'b8\'f4\'ae\'7c\f1 >\cf0  [\f0\'a6\'77\'a5\'fe\'b3\'5c\'a5\'69\'c5\'76\f1 ] [\f0\'b8\'d1\'c0\'a3\'b3\'57\'ab\'68\f1 ]\par
+
+\pard\nowidctlpar   \f0\u9333?\f1 . \f0\'b5\'f8\'b5\'a1\'a4\'e8\'a6\'a1\'a1\'41\'b4\'a3\'a8\'d1\'b3\'42\'b2\'7a\'b6\'69\'ab\'d7\f1\par
+
+\pard\nowidctlpar\fi630\f0\'ae\'e6\'a6\'a1\'a1\'47\f1 WimTool.EXE \cf1  /ExtrImage\cf0  \cf6 <\f0\'ac\'4d\'ae\'67\'c0\'c9\f1 [,\f0\'ac\'4d\'ae\'67\'a8\'f7\'b8\'b9\f1 |\f0\'ac\'4d\'ae\'67\'a8\'f7\'a6\'57\f1 ]> <\f0\'a5\'d8\'bc\'d0\'b8\'f4\'ae\'7c\f1 >\cf0  [\f0\'a6\'77\'a5\'fe\'b3\'5c\'a5\'69\'c5\'76\f1 ] [\f0\'b8\'d1\'c0\'a3\'b3\'57\'ab\'68\f1 ]\par
+\f0\'bb\'a1\'a9\'fa\'a1\'47\f1 [\f0\'a6\'77\'a5\'fe\'b3\'5c\'a5\'69\'c5\'76\f1 ]\f0\'ac\'b0\f1 "/NotAcl"\f0\'a1\'41\f1 [\f0\'b8\'d1\'c0\'a3\'b3\'57\'ab\'68\f1 ]\f0\'ac\'b0\f1 "/Config <\f0\'b3\'5d\'a9\'77\'c0\'c9\f1 >"\par
+\f0\'a5\'dc\'a8\'d2\'a1\'47\f1 WimTool.EXE  \cf1 /Apply\cf0   \cf6 D:\\Test.WIM,2  D:\\PROGRAMS\cf0\par
+\f0\'a5\'dc\'a8\'d2\'a1\'47\f1 WimTool.EXE  \cf1 /ExtrImage\cf0   \cf6 D:\\Test.WIM,1  D:\\PROGRAMS\cf0   /NotAcl\par
+\f0\'a5\'dc\'a8\'d2\'a1\'47\f1 WimTool.EXE  \cf1 /ExtrImage\cf0   \cf6 F:\\SysBack.WIM,2  C:\\\cf0   /NotAcl  /Config  Config.INI\par
+
+\pard\nowidctlpar 4\f0\'a1\'42\'bb\'73\'a7\'40\'ac\'4d\'ae\'67\f1\par
+   \f0\u9332?\f1 . \f0\'c0\'52\'c0\'71\'a4\'e8\'a6\'a1\'a1\'41\'a4\'a3\'b4\'a3\'a8\'d1\'b3\'42\'b2\'7a\'b6\'69\'ab\'d7\f1\par
+
+\pard\nowidctlpar\fi630\f0\'ae\'e6\'a6\'a1\'a1\'47\f1 WimTool.EXE  \cf1 /Capture\cf0  \cf6 <\f0\'a5\'d8\'bc\'d0\'b8\'f4\'ae\'7c\f1 > <\f0\'ac\'4d\'ae\'67\'c0\'c9\f1 [,\f0\'ac\'4d\'ae\'67\'a6\'57\'ba\'d9\f1 ]>\cf0   [\f0\'c0\'a3\'c1\'59\'c3\'fe\'ab\'ac\f1 ] [\f0\'b1\'d2\'b0\'ca\'bc\'d0\'b0\'4f\f1 ] [\f0\'ae\'b7\'c0\'f2\'b3\'57\'ab\'68\f1 ]\par
+\f0\'bb\'a1\'a9\'fa\'a1\'47\f1 [\f0\'c0\'a3\'c1\'59\'c3\'fe\'ab\'ac\f1 ]\f0\'ac\'b0\f1 "/Compress None|Xpress|Lzx|Lzms"\f0\'a1\'41\f1 [\f0\'b1\'d2\'b0\'ca\'bc\'d0\'b0\'4f\f1 ]\f0\'ac\'b0\f1 "/Boot"\f0\'a1\'41\f1 [\f0\'ae\'b7\'c0\'f2\'b3\'57\'ab\'68\f1 ]\f0\'ac\'b0\f1 "/Config <\f0\'b3\'5d\'a9\'77\'c0\'c9\f1 >"\par
+\f0\'a5\'dc\'a8\'d2\'a1\'47\f1 WimTool.EXE  \cf1 /Capture\cf0  \cf6 D:\\PROGRAMS  "D:\\Test.WIM,My Programs" \cf0  /Compress Xpress  /Boot\par
+
+\pard\nowidctlpar    \f0\u9333?\f1 . \f0\'b5\'f8\'b5\'a1\'a4\'e8\'a6\'a1\'a1\'41\'b4\'a3\'a8\'d1\'b3\'42\'b2\'7a\'b6\'69\'ab\'d7\'a1\'41\'a4\'e4\'b4\'a9\'c0\'c9\'b9\'4c\'c2\'6f\'a1\'43\f1\par
+
+\pard\nowidctlpar\fi630\f0\'ae\'e6\'a6\'a1\'a1\'47\f1 WimTool.EXE  \cf1 /CompPath\cf0  \cf6 <\f0\'a5\'d8\'bc\'d0\'b8\'f4\'ae\'7c\f1 > <\f0\'ac\'4d\'ae\'67\'c0\'c9\f1 [,\f0\'ac\'4d\'ae\'67\'a6\'57\'ba\'d9\f1 ]>\cf0   [\f0\'c0\'a3\'c1\'59\'c3\'fe\'ab\'ac\f1 ] [\f0\'b1\'d2\'b0\'ca\'bc\'d0\'b0\'4f\f1 ] [\f0\'ae\'b7\'c0\'f2\'b3\'57\'ab\'68\f1 ]\par
+\f0\'bb\'a1\'a9\'fa\'a1\'47\f1 [\f0\'c0\'a3\'c1\'59\'c3\'fe\'ab\'ac\f1 ]\f0\'ac\'b0\f1 "/Compress None|Xpress|Lzx|Lzms"\f0\'a1\'41\f1 [\f0\'b1\'d2\'b0\'ca\'bc\'d0\'b0\'4f\f1 ]\f0\'ac\'b0\f1 "/Boot"\f0\'a1\'41\f1 [\f0\'ae\'b7\'c0\'f2\'b3\'57\'ab\'68\f1 ]\f0\'ac\'b0\f1 "/Config <\f0\'b3\'5d\'a9\'77\'c0\'c9\f1 >"\par
+\f0\'a5\'dc\'a8\'d2\'a1\'47\f1 WimTool.EXE  \cf1 /CompPath\cf0   \cf6 D:\\WinPE  R:\\WinPE.WIM\cf0   /Boot\par
+\f0\'a5\'dc\'a8\'d2\'a1\'47\f1 WimTool.EXE  \cf1 /CompPath\cf0   \cf6 C:\\  F:\\SysBack.WIM\cf0   /Config Config.INI\par
+
+\pard\nowidctlpar 5\f0\'a1\'42\'b0\'6c\'a5\'5b\'ac\'4d\'ae\'67\f1\par
+
+\pard\nowidctlpar\fi315\f0\'ae\'e6\'a6\'a1\'a1\'47\f1 WimTool.EXE  \cf1 /Append\cf4   \cf6 <\f0\'a5\'d8\'bc\'d0\'b8\'f4\'ae\'7c\f1 > <\f0\'ac\'4d\'ae\'67\'c0\'c9\f1 [,\f0\'ac\'4d\'ae\'67\'a6\'57\'ba\'d9\f1 ]>\cf0   [\f0\'c0\'a3\'c1\'59\'c3\'fe\'ab\'ac\f1 ] [\f0\'b1\'d2\'b0\'ca\'bc\'d0\'b0\'4f\f1 ] [\f0\'ae\'b7\'c0\'f2\'b3\'57\'ab\'68\f1 ]\par
+\f0\'bb\'a1\'a9\'fa\'a1\'47\f1 [\f0\'b1\'d2\'b0\'ca\'bc\'d0\'b0\'4f\f1 ]\f0\'ac\'b0\f1 "/Boot"\f0\'a1\'41\f1 [\f0\'ae\'b7\'c0\'f2\'b3\'57\'ab\'68\f1 ]\f0\'ac\'b0\f1 "/Config <\f0\'b3\'5d\'a9\'77\'c0\'c9\f1 >"\par
+\f0\'a5\'dc\'a8\'d2\'a1\'47\f1 WimTool.EXE  \cf1 /Append\cf0  \cf6 D:\\PROGRAMS  "D:\\Test.WIM,My Programs"\cf0  /Compress Lzx /Boot\par
+
+\pard\nowidctlpar 6\f0\'a1\'42\'b6\'d7\'a5\'58\'a6\'58\'a8\'d6\f1\par
+
+\pard\nowidctlpar\fi315\f0\'ae\'e6\'a6\'a1\'a1\'47\f1 WimTool.EXE  \cf1 /Export\cf0   \cf6 <\f0\'ac\'4d\'ae\'67\'c0\'c9\f1 [,\f0\'ac\'4d\'ae\'67\'a8\'f7\'b8\'b9\f1 |\f0\'ac\'4d\'ae\'67\'a8\'f7\'a6\'57\f1 ]>  <\f0\'ac\'4d\'ae\'67\'c0\'c9\f1 >  \cf0 [\f0\'c0\'a3\'c1\'59\'c3\'fe\'ab\'ac\f1 ]\par
+\f0\'bb\'a1\'a9\'fa\'a1\'47\f1 [\f0\'c0\'a3\'c1\'59\'c3\'fe\'ab\'ac\f1 ]\f0\'ac\'b0\f2\rdblquote\f1  /Compress\f2\rdblquote\f0\'a1\'41\'b7\'ed\'c0\'a3\'c1\'59\'c3\'fe\'ab\'ac\f1 ]\f0\'ac\'b0\f2\rdblquote\f1 Lzms\f2\rdblquote\f0\'ae\'c9\'a5\'48\'b5\'f8\'b5\'a1\'a4\'e8\'a6\'a1\'b0\'f5\'a6\'e6\'a1\'41\'a8\'c3\'b4\'a3\'a8\'d1\'b3\'42\'b2\'7a\'b6\'69\'ab\'d7\'a4\'ce\'a8\'fa\'ae\'f8\'ab\'f6\'b6\'73\f1\par
+\f0\'a5\'dc\'a8\'d2\'a1\'47\f1 WimTool.EXE  \cf1 /Export\cf0   \cf6 F:\\SysBack.WIM,0  D:\\Test.WIM\cf0   /Compress Lzx\par
+
+\pard\nowidctlpar 7\f0\'a1\'42\'a4\'c0\'b3\'ce\'ac\'4d\'ae\'67\f1\par
+
+\pard\nowidctlpar\fi315\f0\'ae\'e6\'a6\'a1\'a1\'47\f1 WimTool.EXE  \cf1 /Split\cf0   \cf6 <\f0\'ac\'4d\'ae\'67\'c0\'c9\f1 >  <\f0\'ac\'4d\'ae\'67\'c0\'c9\f1 ,\f0\'a4\'c0\'a5\'5d\'a4\'6a\'a4\'70\f1 >\cf0\par
+\f0\'bb\'a1\'a9\'fa\'a1\'47\'a4\'c0\'a5\'5d\'a4\'6a\'a4\'70\'ac\'4f\'a5\'48\f1 MB\f0\'ac\'b0\'b3\'e6\'a6\'ec\'a1\'41\cf9\'c4\'dd\'a5\'b2\'b6\'b7\'b0\'d1\'bc\'c6\cf0\'a1\'43\f1\par
+\f0\'a5\'dc\'a8\'d2\'a1\'47\f1 WimTool.EXE  \cf1 /Split\cf0   \cf6 F:\\Test.WIM  R:\\SSS.WIM,100\cf0\par
+
+\pard\nowidctlpar\cf4 8\f0\'a1\'42\'b5\'f9\'a5\'55\'a5\'5c\'af\'e0\f1\par
+
+\pard\nowidctlpar\fi315\f0\'ae\'e6\'a6\'a1\'a1\'47\f1 WimTool.EXE  \cf1 /Register\cf4  [/WimTemp \f0\lang2052\'c1\'7b\'ae\'c9\'a4\'75\'a7\'40\'a5\'d8\'bf\'fd\f1\lang1033 ] [/MountPath \f0\lang2052\'b0\'f2\'c2\'a6\'b1\'be\'b8\'fc\'a5\'d8\'bf\'fd\f1\lang1033 ] [Icon] [Memu] [Exec\cf6 ]\cf4\par
+\f0\'bb\'a1\'a9\'fa\'a1\'47\lang2052\'a8\'e4\'a4\'a4\f1\lang1033 [Icon] [Memu] [Exec\cf6 ]\cf4\f0\lang2052\'a4\'c0\'a7\'4f\'aa\'ed\'a5\'dc\'b9\'cf\'a5\'dc\'c2\'58\'ae\'69\'a1\'42\'a5\'5c\'af\'e0\'aa\'ed\'c2\'58\'ae\'69\'a9\'4d\'c0\'c9\'c3\'f6\'c1\'70\lang1033\'a1\'43\f1\par
+\cf0\f0\'a5\'dc\'a8\'d2\'a1\'47\f1 WimTool.EXE  \cf1 /Register \cf4 Icon Memu Exec /WimTemp F:\\WimTemp /MountPath F:\\MountPath\par
+
+\pard\nowidctlpar\cf0 9\f0\'a1\'42\'a8\'f8\'b8\'fc\'a5\'5c\'af\'e0\f1\par
+
+\pard\nowidctlpar\fi315\cf4\f0\'ae\'e6\'a6\'a1\'a1\'47\f1 WimTool.EXE  \cf1 /Unload\cf4  [Icon] [Memu] [Exec\cf6 ]\cf0\par
+\cf4\f0\'bb\'a1\'a9\'fa\'a1\'47\'ac\'d9\'b2\'a4\'a5\'69\'bf\'ef\'b0\'d1\'bc\'c6\'ae\'c9\'aa\'ed\'a5\'dc\cf0\'a8\'f8\'b8\'fc\cf4\'a9\'d2\'a6\'b3\'a5\'5c\'af\'e0\'a1\'43\cf0\f1\par
+\f0\'a5\'dc\'a8\'d2\'a1\'47\f1 WimTool.EXE  \cf1 /Unload\cf0\par
+
+\pard\nowidctlpar\cf4 10\f0\'a1\'42\cf0\'bd\'73\'bf\'e8\'a5\'5c\'af\'e0\f1\par
+
+\pard\nowidctlpar\fi420\cf4\f0\u9332?\cf0\f1 . \f0\'b4\'a3\'a8\'fa\'c0\'c9\'a5\'d8\'bf\'fd\f1\par
+
+\pard\nowidctlpar\fi630\cf4\f0\'ae\'e6\'a6\'a1\'a1\'47\f1 WimTool.EXE  \cf1 /ExtrPath\cf4   \cf6 <\f0\'ac\'4d\'ae\'67\'c0\'c9\f1 [,\f0\'ac\'4d\'ae\'67\'a8\'f7\'b8\'b9\f1 |\f0\'ac\'4d\'ae\'67\'a8\'f7\'a6\'57\f1 ]>  \cf4 <\f0\'ac\'4d\'ae\'67\'a4\'ba\'aa\'ba\'c0\'c9\'a5\'d8\'bf\'fd\f1 |@[\\]\f0\'c0\'c9\'a5\'d8\'bf\'fd\'b2\'4d\'b3\'e6\'c0\'c9\f1 >  <\f0\'a5\'d8\'bc\'d0\'a5\'d8\'bf\'fd\f1 >\cf0\par
+\f0\'aa\'60\'b7\'4e\'a1\'47\'ac\'4d\'ae\'67\'a8\'f7\'b8\'b9\'a9\'ce\'ac\'4d\'ae\'67\'a8\'f7\'a6\'57\'a5\'75\'a8\'fa\'a8\'e4\'a4\'40\'a1\'41\'ac\'4d\'ae\'67\'c0\'c9\'a9\'4d\'ac\'4d\'ae\'67\'a8\'f7\'b8\'b9\f1 (\f0\'a9\'ce\'ac\'4d\'ae\'67\'a8\'f7\'a6\'57\f1 )\f0\'a6\'58\'ac\'b0\'a4\'40\'ad\'d3\cf6\'a5\'b2\'bb\'dd\'b0\'d1\'bc\'c6\cf0\'a1\'41\'a4\'a7\'b6\'a1\'a5\'ce\f1 ","\f0\'b3\'73\'b1\'b5\'a1\'46\'c0\'c9\'a5\'d8\'bf\'fd\'a6\'57\'a6\'70\'a6\'b3\'aa\'c5\'ae\'e6\'a1\'41\'a5\'b2\'b6\'b7\'a5\'ce\f1 " "\f0\'a5\'5d\'b3\'f2\'a1\'43\f1\par
+\f0\'a5\'dc\'a8\'d2\'a1\'47\f1 WimTool.EXE  \cf1 /ExtrPath  \cf6 D:\\install.esd,2  \cf4 Windows\\System32\\WIMGAPI.DLL  D:\\Test\cf0\par
+\f0\'a5\'dc\'a8\'d2\'a1\'47\f1 WimTool.EXE  \cf1 /ExtrPath  \cf6 D:\\install.esd,2  \cf4 Windows\\System32\\WIM*.*  D:\\Test       //\f0\'a4\'e4\'ab\'f9\'b8\'55\'a5\'ce\'a6\'72\'a4\'b8\f2\rdblquote\f1 ?\f2\rdblquote\f0\'a9\'4d\f2\rdblquote\f1 *\f2\rdblquote\cf0\f1\par
+\f0\'a5\'dc\'a8\'d2\'a1\'47\f1 WimTool.EXE  \cf10 /ExtrPath\cf0   \cf6 D:\\install.esd,2\cf0   @E:\\FileList.TXT  D:\\Test   //\f0\'ab\'65\'b8\'6d\'a6\'72\'a4\'b8\f2\rdblquote\f1 @\f2\rdblquote\f0\'aa\'ed\'a5\'dc\'ad\'6e\'b4\'a3\'a8\'fa\'aa\'ba\'c0\'c9\'a5\'d8\'bf\'fd\'a6\'62\f1 E: \\FileList.TXT\f0\'a6\'43\'a5\'58\f1\par
+\f0\'a5\'dc\'a8\'d2\'a1\'47\f1 WimTool.EXE  \cf10 /ExtrPath\cf0   \cf6 D:\\install.esd,2\cf0   @\\FileList.TXT   D:\\Test   //\f0\'ab\'65\'b8\'6d\'a6\'72\'a4\'b8\f2\rdblquote\f1\\\f2\rdblquote\f0\'aa\'ed\'a5\'dc\'ac\'d9\'b2\'a4\'a4\'46\f1 FileList.TXT\f0\'aa\'ba\'b5\'b4\'b9\'ef\'b8\'f4\'ae\'7c\'a1\'41\'aa\'ed\'a5\'dc\f1 FileList.TXT\f0\'bb\'50\'ac\'4d\'ae\'67\'a6\'50\'a5\'d8\'bf\'fd\f1\par
+\f0\'bb\'a1\'a9\'fa\'a1\'47\'a4\'55\'ad\'b1\'ac\'4f\'a4\'40\'ad\'d3\'c0\'c9\'a5\'d8\'bf\'fd\'b2\'4d\'b3\'e6\'c0\'c9\'aa\'ba\'a4\'ba\'ae\'65\'a1\'41\'aa\'ed\'a5\'dc\f1 WIM\f0\'a5\'b4\'c0\'59\'aa\'ba\'a5\'fe\'b3\'a1\'c0\'c9\'a9\'4d\'be\'e3\'ad\'d3\'b5\'f9\'a5\'55\'aa\'ed\'a5\'d8\'bf\'fd\'a1\'41\'a4\'40\'ad\'d3\'b2\'4d\'b3\'e6\'c0\'c9\'a5\'69\'a5\'48\'a6\'b3\'a6\'68\'a6\'e6\'a1\'41\'a5\'69\'a5\'48\'ac\'4f\'bd\'54\'a9\'77\'aa\'ba\'c0\'c9\'a5\'d8\'bf\'fd\'a1\'41\'a4\'5d\'a5\'69\'a5\'48\'a5\'ce\'b8\'55\'a5\'ce\'a6\'72\'a4\'b8\'aa\'ed\'a5\'dc\'a4\'40\'c3\'fe\'c0\'c9\f1\par
+\trowd\trgaph108\trleft1242\trbrdrl\brdrs\brdrw10 \trbrdrt\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trpaddl108\trpaddr108\trpaddfl3\trpaddfr3
+\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx8863 
+\pard\intbl\nowidctlpar // \f0\'b3\'6f\'ac\'4f\'a4\'40\'ad\'d3\'c0\'c9\'a5\'d8\'bf\'fd\'b2\'4d\'b3\'e6\'aa\'ba\'a5\'dc\'a8\'d2\f1\cell\row\trowd\trgaph108\trleft1242\trbrdrl\brdrs\brdrw10 \trbrdrt\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trpaddl108\trpaddr108\trpaddfl3\trpaddfr3
+\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx8863 
+\pard\intbl\nowidctlpar Windows\\System32\\WIM*.*\cell\row\trowd\trgaph108\trleft1242\trbrdrl\brdrs\brdrw10 \trbrdrt\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trpaddl108\trpaddr108\trpaddfl3\trpaddfr3
+\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx8863 
+\pard\intbl\nowidctlpar Windows\\System32\\Drivers\\WIM*.*\cell\row\trowd\trgaph108\trleft1242\trbrdrl\brdrs\brdrw10 \trbrdrt\brdrs\brdrw10 \trbrdrr\brdrs\brdrw10 \trbrdrb\brdrs\brdrw10 \trpaddl108\trpaddr108\trpaddfl3\trpaddfr3
+\clbrdrl\brdrw10\brdrs\clbrdrt\brdrw10\brdrs\clbrdrr\brdrw10\brdrs\clbrdrb\brdrw10\brdrs \cellx8863 
+\pard\intbl\nowidctlpar Windows\\System32\\ Config\cell\row 
+\pard\nowidctlpar\fi420\cf4\f0\u9333?\cf0\f1 . \f0\'b0\'6c\'a5\'5b\'c0\'c9\'a5\'d8\'bf\'fd\f1\par
+
+\pard\nowidctlpar\fi630\cf4\f0\'ae\'e6\'a6\'a1\'a1\'47\f1 WimTool.EXE\cf0   \cf1 /AppenPath\cf0   \cf6 <\f0\'ac\'4d\'ae\'67\'c0\'c9\f1 [,\f0\'ac\'4d\'ae\'67\'a8\'f7\'b8\'b9\f1 |\f0\'ac\'4d\'ae\'67\'a8\'f7\'a6\'57\f1 ]>  \cf4 <\f0\'ac\'4d\'ae\'67\'a4\'ba\'aa\'ba\'c0\'c9\'a5\'d8\'bf\'fd\f1 >  <\f0\'ad\'6e\'b0\'6c\'a5\'5b\'aa\'ba\'c0\'c9\'a5\'d8\'bf\'fd\f1 |@[\\]\f0\'c0\'c9\'a5\'d8\'bf\'fd\'b2\'4d\'b3\'e6\'c0\'c9\f1 >\cf0\par
+\f0\'aa\'60\'b7\'4e\'a1\'47\'ac\'4d\'ae\'67\'a8\'f7\'b8\'b9\'a9\'ce\'ac\'4d\'ae\'67\'a8\'f7\'a6\'57\'a5\'75\'a8\'fa\'a8\'e4\'a4\'40\'a1\'41\'ac\'4d\'ae\'67\'c0\'c9\'a9\'4d\'ac\'4d\'ae\'67\'a8\'f7\'b8\'b9\f1 (\f0\'a9\'ce\'ac\'4d\'ae\'67\'a8\'f7\'a6\'57\f1 )\f0\'a6\'58\'ac\'b0\'a4\'40\'ad\'d3\cf6\'a5\'b2\'bb\'dd\'b0\'d1\'bc\'c6\cf0\'a1\'41\'a4\'a7\'b6\'a1\'a5\'ce\f1 ","\f0\'b3\'73\'b1\'b5\'a1\'46\'c0\'c9\'a5\'d8\'bf\'fd\'a6\'57\'a6\'70\'a6\'b3\'aa\'c5\'ae\'e6\'a1\'41\'a5\'b2\'b6\'b7\'a5\'ce\f1 " "\f0\'a5\'5d\'b3\'f2\'a1\'43\f1\par
+\f0\'a5\'dc\'a8\'d2\'a1\'47\f1 WimTool.EXE  \cf1 /AppenPath  \cf6 D:\\install.esd,4  \cf4 Windows\\System32  D:\\SysBackup\\Windows\\System32\\WIMGAPI.DLL\par
+\cf0\f0\'a5\'dc\'a8\'d2\'a1\'47\f1 WimTool.EXE  \cf1 /AppenPath  \cf6 D:\\install.esd,4  \cf4 Windows\\System32  D:\\SysBackup\\Windows\\System32\\WIM*.*\par
+\cf0\f0\'a5\'dc\'a8\'d2\'a1\'47\f1 WimTool.EXE  \cf1 /AppenPath  \cf6 D:\\install.esd,4  \cf4 Windows\\System32  \cf0 @E:\\FileList.TXT        //\f0\'c0\'c9\'a5\'d8\'bf\'fd\'b2\'4d\'b3\'e6\'c0\'c9\'b0\'d1\'b7\'d3\'a4\'57\'a8\'d2\f1\par
+\f0\'a5\'dc\'a8\'d2\'a1\'47\f1 WimTool.EXE  \cf1 /AppenPath  \cf6 D:\\install.esd,4  \cf4 Windows\\System32  \cf0 @\\FileList.TXT          //\f0\'ab\'65\'b8\'6d\'a6\'72\'a4\'b8\f2\rdblquote\f1 @\f2\rdblquote\f0\'a1\'42\f2\rdblquote\f1\\\f2\rdblquote\f1  \f0\'aa\'ba\'b7\'4e\'b8\'71\'a6\'50\'a4\'57\cf4\f1\par
+
+\pard\nowidctlpar\fi420\f0\u9334?\cf0\f1 . \f0\'a7\'52\'b0\'a3\'c0\'c9\'a5\'d8\'bf\'fd\f1\par
+  \f0\'ae\'e6\'a6\'a1\'a1\'47\f1 WimTool.EXE  \cf10 /Remove\cf0    \cf6 <\f0\'ac\'4d\'ae\'67\'c0\'c9\f1 [,\f0\'ac\'4d\'ae\'67\'a8\'f7\'b8\'b9\f1 |\f0\'ac\'4d\'ae\'67\'a8\'f7\'a6\'57\f1 ]>\cf0   <\f0\'ac\'4d\'ae\'67\'a4\'ba\'aa\'ba\'c0\'c9\'a5\'d8\'bf\'fd\cf4\f1 |@[\\]\f0\'c0\'c9\'a5\'d8\'bf\'fd\'b2\'4d\'b3\'e6\'c0\'c9\cf0\f1 >\par
+  \f0\'aa\'60\'b7\'4e\'a1\'47\'ac\'4d\'ae\'67\'a8\'f7\'b8\'b9\'a9\'ce\'ac\'4d\'ae\'67\'a8\'f7\'a6\'57\'a5\'75\'a8\'fa\'a8\'e4\'a4\'40\'a1\'41\'ac\'4d\'ae\'67\'c0\'c9\'a9\'4d\'ac\'4d\'ae\'67\'a8\'f7\'b8\'b9\f1 (\f0\'a9\'ce\'ac\'4d\'ae\'67\'a8\'f7\'a6\'57\f1 )\f0\'a6\'58\'ac\'b0\'a4\'40\'ad\'d3\cf6\'a5\'b2\'bb\'dd\'b0\'d1\'bc\'c6\cf0\'a1\'41\'a4\'a7\'b6\'a1\'a5\'ce\f1 ","\f0\'b3\'73\'b1\'b5\'a1\'46\'c0\'c9\'a5\'d8\'bf\'fd\'a6\'57\'a6\'70\'a6\'b3\'aa\'c5\'ae\'e6\'a1\'41\'a5\'b2\'b6\'b7\'a5\'ce\f1 " "\f0\'a5\'5d\'b3\'f2\'a1\'43\f1\par
+  \f0\'a5\'dc\'a8\'d2\'a1\'47\f1 WimTool.EXE  \cf10 /Remove\cf0   \cf9 D:\\install.esd,2\cf0   Windows\\System32\\WIMGAPI.DLL\par
+  \f0\'a5\'dc\'a8\'d2\'a1\'47\f1 WimTool.EXE  \cf10 /Remove\cf0   \cf9 D:\\install.esd,2\cf0   Windows\\System32\\WIM*.*\par
+  \f0\'a5\'dc\'a8\'d2\'a1\'47\f1 WimTool.EXE  \cf10 /Remove\cf0   \cf9 D:\\install.esd,2\cf0   @E:\\FileList.TXT                               //\f0\'c0\'c9\'a5\'d8\'bf\'fd\'b2\'4d\'b3\'e6\'c0\'c9\'b0\'d1\'b7\'d3\'a4\'57\'a8\'d2\f1\par
+  \f0\'a5\'dc\'a8\'d2\'a1\'47\f1 WimTool.EXE  \cf10 /Remove\cf0   \cf9 D:\\install.esd,2\cf0   @\\FileList.TXT                                 //\f0\'ab\'65\'b8\'6d\'a6\'72\'a4\'b8\f2\rdblquote\f1 @\f2\rdblquote\f0\'a1\'42\f2\rdblquote\f1\\\f2\rdblquote\f1  \f0\'aa\'ba\'b7\'4e\'b8\'71\'a6\'50\'a4\'57\f1\par
+\cf4\f0\u9335?\cf0\f1 . \b\f0\'b5\'f8\'b5\'a1\'be\'de\'a7\'40\'a4\'e8\'aa\'6b\b0\f1\par
+
+\pard\nowidctlpar\fi630 WimTool\f0\'aa\'ba\'b2\'c4\f1 5\f0\'ad\'b6\'a1\'41\'b0\'a3\'a4\'46\'a5\'69\'a5\'48\'ac\'79\'c4\'fd\'b5\'77\'ba\'d0\'a4\'57\'aa\'ba\'c0\'c9\'a5\'d8\'bf\'fd\'a5\'7e\'a1\'41\'c1\'d9\'a5\'69\'a5\'48\'ac\'79\'c4\'fd\f1 WIM\f0\'aa\'ba\'a8\'f7\'ac\'4d\'ae\'67\'a9\'4d\'c0\'c9\'a5\'d8\'bf\'fd\'a1\'41\'a8\'c3\'a5\'69\'a5\'48\'b9\'ef\f1 WIM\f0\'aa\'ba\'a8\'f7\'ac\'4d\'ae\'67\'a9\'4d\'c0\'c9\'a5\'d8\'bf\'fd\'b6\'69\'a6\'e6\cf1\f1 [\f0\'b4\'a3\'a8\'fa\f1 ]\cf0\f0\'a1\'42\cf1\f1 [\f0\'b0\'6c\'a5\'5b\f1 ]\cf0\f0\'a1\'42\cf1\f1 [\f0\'a7\'52\'b0\'a3\f1 ]\cf0\f0\'a1\'42\cf1\f1 [\f0\'a7\'ef\'a6\'57\f1 ]\cf0\f0\'b5\'a5\f1 4\f0\'b6\'b5\'be\'de\'a7\'40\'a1\'41\f1\par
+\f0\'b3\'6f\f1 4\f0\'b6\'b5\'be\'de\'a7\'40\'a5\'69\'a5\'48\'b3\'71\'b9\'4c\'b7\'c6\'b9\'ab\'a5\'6b\'c1\'e4\'a5\'5c\'af\'e0\'aa\'ed\'b9\'ea\'b2\'7b\'a1\'46\f1 [\f0\'b4\'a3\'a8\'fa\f1 ]\f0\'a1\'42\f1 [\f0\'b0\'6c\'a5\'5b\f1 ]\f0\'a8\'e2\'b6\'b5\'be\'de\'a7\'40\'a5\'69\'a5\'48\'b3\'71\'b9\'4c\'b7\'c6\'b9\'ab\'a9\'ec\'ab\'fb\'b9\'ea\'b2\'7b\'a1\'46\f1 [\f0\'a7\'ef\'a6\'57\f1 ]\f0\'be\'de\'a7\'40\'a4\'5d\'a5\'69\'a5\'48\'b3\'71\'b9\'4c\'a7\'d6\'b3\'74\'c1\'e4\f1 F2\f0\'a8\'d3\'b9\'ea\'b2\'7b\'a1\'43\'b5\'f8\'b5\'a1\'a4\'ba\f1 [\f0\'b4\'a3\'a8\'fa\f1 ]\f0\'a1\'42\f1 [\f0\'a7\'52\'b0\'a3\f1 ]\f0\'a1\'42\f1 [\f0\'b0\'6c\'a5\'5b\f1 ]\f0\'a5\'69\'a5\'48\'a7\'e5\'b6\'71\'be\'de\'a7\'40\'a1\'43\f1\par
+\f0\'a6\'62\'ac\'79\'c4\'fd\'c0\'c9\'a5\'d8\'bf\'fd\'b5\'f8\'b5\'a1\'a1\'41\'a5\'69\'a5\'48\'b3\'71\'b9\'4c\'c2\'49\'c0\'bb\'a6\'43\'aa\'ed\'b2\'c4\f1 1\f0\'b6\'b5\f2\rdblquote\cf1\f0\'a4\'57\'a4\'40\'af\'c5\'a5\'d8\'bf\'fd\cf0\f2\rdblquote\f0\'a9\'ce\cf1\'a5\'aa\'a4\'55\'a4\'e8\'aa\'ba\'aa\'f0\'a6\'5e\'b9\'cf\'a5\'dc\cf0\'a8\'cc\'a6\'b8\'aa\'f0\'a6\'5e\'a4\'57\'a4\'40\'af\'c5\'a5\'d8\'bf\'fd\'a1\'46\cf1\'c2\'49\'c0\'bb\'aa\'ed\'c0\'59\'aa\'ba\f2\rdblquote\f0\'a7\'c7\'b8\'b9\f2\rdblquote\cf0\f0\'a5\'69\'a5\'48\'aa\'bd\'b1\'b5\'aa\'f0\'a6\'5e\'a8\'ec\'a8\'74\'b2\'ce\'aa\'ba\'ae\'da\'a5\'d8\'bf\'fd\f2\rdblquote\f0\'a7\'da\'aa\'ba\'b9\'71\'b8\'a3\f2\rdblquote\f0\'a1\'43\f1\par
+
+\pard\nowidctlpar\cf4 11\f0\'a1\'42\'a8\'e4\'a5\'a6\'a5\'5c\'af\'e0\cf0\f1\par
+
+\pard\nowidctlpar\fi210\cf4\f0\u9332?\cf0\f1 . \f0\'ad\'ab\'ab\'d8\'a8\'74\'b2\'ce\'b9\'cf\'a5\'dc\'bd\'77\'a6\'73\f1\par
+
+\pard\nowidctlpar\fi630\f0\'ae\'e6\'a6\'a1\'a1\'47\f1 WimTool.EXE  \cf1 /Icon  \cf4 [\cf0\f0\'b9\'cf\'a5\'dc\'bd\'77\'a6\'73\lang2052\'a4\'6a\'a4\'70\f1\lang1033 ]\par
+\f0\lang2052\'bb\'a1\'a9\'fa\lang1033\'a1\'47\'b9\'cf\'a5\'dc\'bd\'77\'a6\'73\lang2052\'a4\'6a\'a4\'70\'ac\'b0\f1\lang1033 1024\f0\lang2052\'a1\'e3\f1\lang1033 8192\f0\'a1\'41\lang2052\'a7\'59\f1\lang1033 1MB\f0\lang2052\'a1\'e3\f1\lang1033 8MB\f0\lang2052\'a4\'a7\'b6\'a1\lang1033\'a1\'41\lang2052\'ab\'d8\'c4\'b3\'a8\'fa\'be\'e3\'bc\'c6\f1\lang1033 MB\par
+\f0\'a5\'dc\'a8\'d2\'a1\'47\f1 WimTool.EXE  \cf1 /Icon  \cf4 8192\cf8\par
+
+\pard\nowidctlpar\fi210\cf4\f0\u9333?\cf0\f1 . \f0\'b1\'d2\'b0\'ca\'ab\'fc\'a9\'77\'aa\'ba\'a5\'5c\'af\'e0\'ad\'b6\f1\par
+
+\pard\nowidctlpar\fi525\f0\'ae\'e6\'a6\'a1\'a1\'47\f1 WimTool.EXE  \cf1 /Page \cf0  \cf9 <[\f0\'c0\'c9\'a5\'d8\'bf\'fd\f1 ],\f0\'a5\'5c\'af\'e0\'ad\'b6\'bd\'58\f1 >\cf0\par
+\f0\'a5\'dc\'a8\'d2\'a1\'47\f1 WimTool.EXE  \cf1 /Page\cf0   \cf9 F:\\Test.WIM,3\cf0\par
+\f0\'a5\'dc\'a8\'d2\'a1\'47\f1 WimTool.EXE  \cf1 /Page\cf0   \cf9 ,3\cf0\par
+
+\pard\nowidctlpar\fi210\cf4\f0\u9334?\cf0\f1 . \f0\'b3\'5d\'b8\'6d\'c1\'7b\'ae\'c9\'a4\'75\'a7\'40\'a5\'d8\'bf\'fd\f1\par
+
+\pard\nowidctlpar\fi525\f0\'ae\'e6\'a6\'a1\'a1\'47\f1 WimTool.EXE  \cf1 /WimTemp\cf0   \cf9 <\f0\'a5\'d8\'bf\'fd\'a5\'fe\'a6\'57\f1 >\cf0\par
+\f0\'a5\'dc\'a8\'d2\'a1\'47\f1 WimTool.EXE  \cf1 /WimTemp  \cf9 D:\\WimTool\\WimTemp\cf0\par
+
+\pard\nowidctlpar\fi210\cf4\f0\u9335?\cf0\f1 . \f0\'b3\'5d\'b8\'6d\'b0\'f2\'c2\'a6\'b1\'be\'b8\'fc\'a5\'d8\'bf\'fd\f1\par
+
+\pard\nowidctlpar\fi525\f0\'ae\'e6\'a6\'a1\'a1\'47\f1 WimTool.EXE  \cf1 /MountPath\cf0   \cf9 <\f0\'a5\'d8\'bf\'fd\'a5\'fe\'a6\'57\f1 >\cf0\par
+\f0\'a5\'dc\'a8\'d2\'a1\'47\f1 WimTool.EXE  \cf1 /MountPath  \cf9 D:\\WimTool\\MountPath\cf0\par
+
+\pard\nowidctlpar\cf8\par
+\cf2\b\f0\'a4\'bb\'a1\'42\'a8\'cf\'a5\'ce\'aa\'60\'b7\'4e\f1\par
+\cf4\b0 1\f0\'a1\'42\f1 WimTool\f0\'a5\'b2\'b6\'b7\'a5\'48\cf1\'ba\'de\'b2\'7a\'ad\'fb\'aa\'ba\'a8\'ad\'a5\'f7\'b9\'42\'a6\'e6\cf4\'a1\'41\'a8\'74\'b2\'ce\'a4\'a4\'a5\'b2\'b6\'b7\'a5\'bf\'bd\'54\'a6\'77\'b8\'cb\f1 WimMount\f0\'a4\'b8\'a5\'f3\'a1\'41\'a4\'7e\'af\'e0\'a8\'cf\'a5\'ce\f1 WimTool\f0\'aa\'ba\'a5\'fe\'b3\'a1\'a5\'5c\'af\'e0\'a1\'43\f1\par
+2\f0\'a1\'42\'a6\'62\'ba\'eb\'c2\'b2\'aa\'ba\f1 WinPE\f0\'a8\'74\'b2\'ce\'a4\'a4\'ac\'59\'a8\'c7\'a5\'5c\'af\'e0\'a5\'69\'af\'e0\'b5\'4c\'aa\'6b\'a8\'cf\'a5\'ce\'a1\'43\f1\par
+3\f0\'a1\'42\'a8\'74\'b2\'ce\'aa\'ba\cf1\'c1\'7b\'ae\'c9\'a5\'d8\'bf\'fd\'a5\'b2\'b6\'b7\'a6\'b3\'a8\'ac\'b0\'f7\'aa\'ba\'aa\'c5\'b6\'a1\cf4\'a1\'46\'a6\'62\f1 PE\f0\'a4\'a4\'a8\'cf\'a5\'ce\'ae\'c9\'a1\'41\'c1\'7b\'ae\'c9\'a5\'d8\'bf\'fd\'ab\'d8\'c4\'b3\'b3\'5d\'b8\'6d\'a8\'ec\'b5\'77\'ba\'d0\'a4\'57\'a1\'43\f1\par
+4\f0\'a1\'42\'a4\'40\'ad\'d3\'ac\'4d\'ae\'67\'a4\'a4\'a5\'75\'a6\'b3\'a4\'40\'ad\'d3\'ac\'4d\'a8\'f7\'a8\'e3\'a6\'b3\'b1\'d2\'b0\'ca\'bc\'d0\'b0\'4f\'a1\'46\'ac\'4d\'ae\'67\'a4\'a4\'aa\'ba\'ac\'4d\'a8\'f7\'b8\'b9\'ac\'4f\'b0\'df\'a4\'40\'aa\'ba\'a1\'41\'a6\'d3\'ac\'4d\'a8\'f7\'a6\'57\'a9\'4d\'a8\'f7\'b4\'79\'ad\'7a\'b6\'c8\'a7\'40\'ac\'b0\'ac\'4d\'ae\'67\'a8\'f7\'aa\'ba\'bb\'a1\'a9\'fa\'a1\'41\'a5\'a6\'ad\'cc\'a8\'c3\'a4\'a3\'ac\'4f\'b0\'df\'a4\'40\'aa\'ba\'a1\'41\f1\par
+   \f0\'b4\'4e\'ac\'4f\'bb\'a1\'a4\'40\'ad\'d3\'ac\'4d\'ae\'67\'a4\'a4\'aa\'ba\'a4\'a3\'a6\'50\'ac\'4d\'a8\'f7\'a5\'69\'a5\'48\'a8\'e3\'ac\'db\'a6\'50\'aa\'ba\'a6\'57\'ba\'d9\'a9\'4d\'b4\'79\'ad\'7a\'a1\'43\f1\par
+5\f0\'a1\'42\'b7\'ed\'a8\'74\'b2\'ce\'a4\'a4\'aa\'ba\f1 WIM\f0\'c0\'c9\'c3\'f6\'c1\'70\'a5\'58\'b2\'7b\'bf\'f9\'bb\'7e\'a9\'ce\'b2\'a7\'b1\'60\'ae\'c9\'a1\'41\'bd\'d0\'c2\'49\f1 [\f0\'a8\'fa\'ae\'f8\'c0\'c9\'c3\'f6\'c1\'70\f1 ]\f0\'ab\'f6\'b6\'73\'a1\'41\'a6\'41\'c2\'49\f1 [\f0\'b3\'5d\'b8\'6d\'c0\'c9\'c3\'f6\'c1\'70\f1 ]\f0\'ab\'f6\'b6\'73\'a8\'d3\'ad\'d7\'b4\'5f\'a1\'43\f1\par
+6\f0\'a1\'42\'a6\'70\'aa\'47\'a7\'41\'b9\'ef\'ae\'b7\'c0\'f2\'ac\'4d\'ae\'67\'aa\'ba\'b3\'5d\'a9\'77\'c0\'c9\'a4\'a3\'ab\'dc\'c1\'41\'b8\'d1\'a1\'41\'bd\'d0\'a4\'a3\'ad\'6e\'ad\'d7\'a7\'ef\'a5\'a6\'a1\'41\'a5\'ce\'c0\'71\'bb\'7b\'aa\'ba\'b3\'5d\'b8\'6d\'a7\'59\'a5\'69\'a1\'43\f1\par
+7\f0\lang2052\'a1\'42\'a4\'c1\'b4\'ab\'bb\'79\'a8\'a5\'ab\'e1\'a1\'41\f1\lang1033 WimTool\f0\lang2052\'aa\'ba\'a5\'44\'bc\'d2\'b2\'d5\'a4\'b6\'ad\'b1\'a5\'69\'a7\'59\'ae\'c9\'a5\'cd\'ae\'c4\'a1\'41\'a5\'6b\'c1\'e4\'a5\'5c\'af\'e0\'aa\'ed\'bb\'dd\'ad\'6e\'ad\'ab\'b1\'d2\'a9\'ce\'b5\'6e\'a5\'58\'a4\'7e\'a5\'69\'a5\'48\'a5\'cd\'ae\'c4\'a1\'43\f1\lang1033\par
+8\f0\'a1\'42\f1 WimTool\f0\'ae\'b7\'c0\'f2\'ac\'4d\'ae\'67\'a9\'ce\'b8\'d1\'c0\'a3\'ac\'4d\'ae\'67\'b3\'a3\'a6\'b3\'c0\'c9\'a5\'f3\'b9\'4c\'c2\'6f\'bf\'7a\'bf\'ef\'b1\'c6\'b0\'a3\'a5\'5c\'af\'e0\'a1\'41\'a5\'42\'a4\'e4\'b4\'a9\'c0\'c9\'a5\'d8\'bf\'fd\'b1\'61\'b8\'55\'a5\'ce\'a6\'72\'a4\'b8\f1  \f2\rquote\f1 ?\f2\rquote\f1  \f0\'a9\'4d\f1  \f2\rquote\f1 *\f2\rquote\f0\'a1\'41\'ad\'6e\'c1\'41\'b8\'d1\'bf\'7a\'bf\'ef\'b1\'c6\'b0\'a3\'b3\'57\'ab\'68\'aa\'ba\'bc\'67\'aa\'6b\'a1\'41\'bd\'d0\'ac\'dd\cf0\f1 Languages\f0\'a5\'d8\'bf\'fd\'a4\'55\'aa\'ba\f1 INI\f0\'c0\'c9\'a1\'41\f1\par
+
+\pard\nowidctlpar\fi315\f0\'a9\'ce\'c2\'49\'c0\'bb\'b2\'c4\f1 1\f0\'ad\'b6\f1 [\f0\'b3\'5d\'a9\'77\'c0\'c9\f1 ]\f0\'ab\'f6\'b6\'73\'a1\'41\'a6\'62\'bc\'75\'a5\'58\'aa\'ba\'b5\'a1\'a4\'66\'a4\'a4\'c2\'49\'ba\'77\'c0\'bb\f1 [\f0\'b9\'77\'b3\'5d\f1 ]\f0\'ab\'f6\'b6\'73\'a1\'46\cf4\f1\par
+
+\pard\nowidctlpar 9\f0\'a1\'42\f1 WimTool\f0\'ae\'b7\'c0\'f2\'ac\'4d\'ae\'67\'a9\'ce\'b8\'d1\'c0\'a3\'ac\'4d\'ae\'67\'b3\'a3\'c0\'71\'bb\'7b\'a8\'cf\'a5\'ce\'a4\'46\'a4\'ba\'b8\'6d\'aa\'ba\'b3\'5d\'a9\'77\'c0\'c9\'a1\'41\cf1\'ba\'f4\'a4\'57\'a4\'55\'b8\'fc\'a4\'55\'a8\'d3\'aa\'ba\f1 WinPE\f0\'a1\'41\'a5\'69\'af\'e0\'a6\'62\f1 Temp\f0\'a5\'d8\'bf\'fd\'a9\'f1\'a6\'b3\cf6\'af\'53\'ae\'ed\'c0\'c9\cf1\'a1\'41\'a5\'ce\f1 WimTool\f0\'b8\'d1\'a5\'5d\'ab\'e1\'a6\'41\'a5\'b4\'a5\'5d\'a5\'69\'af\'e0\'b5\'4c\'aa\'6b\'b1\'d2\'b0\'ca\cf4\'a1\'41\'bd\'d0\'a7\'41\'c1\'41\'b8\'d1\f1 WimTool\f0\'a4\'ba\'b8\'6d\'aa\'ba\'b3\'5d\'a9\'77\'c0\'c9\'a1\'43\f1\par
+\cf2\b\par
+\f0\'a4\'43\'a1\'42\'af\'53\'a7\'4f\'c1\'6e\'a9\'fa\cf4\b0\f1\par
+1\f0\'a1\'42\f1 WimTool\f0\'ac\'4f\'a7\'4b\'b6\'4f\'b3\'6e\'c5\'e9\'a1\'41\'b1\'7a\'a5\'69\'b5\'4c\'ad\'ad\'a8\'ee\'a6\'61\'a8\'cf\'a5\'ce\'a1\'42\'bd\'c6\'bb\'73\'a1\'42\'a4\'c0\'b5\'6f\'a9\'4d\'b6\'c7\'bc\'bd\'a5\'bb\'b3\'6e\'c5\'e9\'a1\'41\'b1\'7a\'a5\'b2\'b6\'b7\'ab\'4f\'c3\'d2\'a8\'43\'a5\'f7\'bd\'c6\'bb\'73\'a1\'42\'a4\'c0\'b5\'6f\'a9\'4d\'b6\'c7\'bc\'bd\'b3\'a3\'ac\'4f\'af\'75\'b9\'ea\'aa\'ba\'a9\'4d\'a7\'b9\'be\'e3\'aa\'ba\'a1\'43\f1\par
+2\f0\'a1\'42\'a5\'bb\'a4\'48\'a4\'a3\'b4\'a3\'a8\'d1\f1 WimTool\f0\'aa\'ba\'a5\'f4\'a6\'f3\'ab\'4f\'c3\'d2\'a9\'4d\'be\'e1\'ab\'4f\'a1\'41\'a5\'e7\'a4\'a3\'b9\'ef\'a8\'cf\'a5\'ce\'aa\'cc\'a8\'cf\'a5\'ce\'a5\'bb\'b3\'6e\'c5\'e9\'ae\'c9\'a5\'f4\'a6\'f3\'b2\'7a\'bd\'d7\'a4\'57\'aa\'ba\'a9\'ce\'b9\'ea\'bb\'da\'a4\'57\'aa\'ba\'b7\'6c\'a5\'a2\'a9\'d3\'be\'e1\'b3\'64\'a5\'f4\'a1\'43\f1\par
+3\f0\'a1\'42\'b8\'54\'a4\'ee\'a5\'f4\'a6\'f3\'a4\'48\'a9\'ce\'a5\'f4\'a6\'f3\'b2\'d5\'c2\'b4\'a7\'51\'a5\'ce\'a5\'bb\'b3\'6e\'c5\'e9\'b1\'71\'a8\'c6\'a5\'f4\'a6\'f3\lang2052\'b9\'48\'aa\'6b\'ac\'a1\'b0\'ca\'a9\'ce\lang1033\'c0\'e7\'a7\'51\'ac\'a1\'b0\'ca\'a1\'43\f1\par
+\par
+
+\pard\nowidctlpar\qr\cf10\b\fs21 Lxl1638 \f0\'ad\'5a\'a6\'57\'a5\'ab\'b2\'c4\'a4\'40\'a4\'a4\lang2052\'be\'c7\f1\lang1033  \f0\'a6\'d1\'a4\'45\'a1\'41\f1 2026.01.01\par
+
+\pard\nowidctlpar\ri840\qc\par
+}
+ 
