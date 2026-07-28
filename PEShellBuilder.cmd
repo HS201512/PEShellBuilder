@@ -95,11 +95,11 @@ if /i "%choice%"=="N" xcopy "%~dp0PETools" "%~dp0temp\mount\Program Files" /E /H
 if /i "%choice%"=="Y" copy "%~dp0LaunchBats\PEShell.bat" "%~dp0temp\mount\Windows\System32"
 if /i "%choice%"=="N" copy "%~dp0LaunchBats\PEShell.bat" "%~dp0temp\mount\Windows\System32"
 if /i "%choice%"=="F" copy "%~dp0LaunchBats\PEShell_NotTools.bat" "%~dp0temp\mount\Windows\System32"
-echo [LaunchApps] > %~dp0temp\mount\Windows\System32\winpeshl.ini
-echo wpeinit >> %~dp0temp\mount\Windows\System32\winpeshl.ini
-if /i "%choice%"=="Y" echo PEShell.bat >> %~dp0temp\mount\Windows\System32\winpeshl.ini
-if /i "%choice%"=="N" echo PEShell.bat >> %~dp0temp\mount\Windows\System32\winpeshl.ini
-if /i "%choice%"=="F" echo PEShell_NotTools.bat >> %~dp0temp\mount\Windows\System32\winpeshl.ini
+echo [LaunchApps] > "%~dp0temp\mount\Windows\System32\winpeshl.ini"
+echo wpeinit >> "%~dp0temp\mount\Windows\System32\winpeshl.ini"
+if /i "%choice%"=="Y" echo PEShell.bat >> "%~dp0temp\mount\Windows\System32\winpeshl.ini"
+if /i "%choice%"=="N" echo PEShell.bat >> "%~dp0temp\mount\Windows\System32\winpeshl.ini"
+if /i "%choice%"=="F" echo PEShell_NotTools.bat >> "%~dp0temp\mount\Windows\System32\winpeshl.ini"
 if exist "%~dp0packages\*.cab" (
     dism /image:"%~dp0temp\mount" /add-package /packagepath:"%~dp0packages"
     dism /image:"%~dp0temp\mount" /cleanup-image /startcomponentcleanup /resetbase
