@@ -1,0 +1,19 @@
+;9200 // Only used for Win8.x and higher
+
+\Program Files\WindowsApps\Microsoft*
+\Program Files\WindowsApps\Clipchamp.*
+!\Program Files\WindowsApps\Microsoft.VCLibs.*
+
+\Windows\SystemApps
+!\Windows\SystemApps\Microsoft.UI.Xaml.*
+!\Windows\SystemApps\MicrosoftWindows.Client.*
+!\Windows\SystemApps\Microsoft.Windows.StartMenuExperienceHost_*
+
+\Program Files\WindowsApps\DeletedAllUserPackages
+\Program Files\WindowsApps\NVIDIACorp.*
+\Program Files\WindowsApps\RealtekSemiconductorCorp.*
+
+!\Windows\SystemApps\microsoft.creddialoghost_*
+!\Windows\SystemApps\Microsoft.Win32WebViewHost_*
+
+!\Program Files\WindowsApps\Microsoft.VP9VideoExtensions_*

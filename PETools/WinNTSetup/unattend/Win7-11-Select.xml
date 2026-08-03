@@ -59,6 +59,26 @@ process=1
         <SkipMachineOOBE>true</SkipMachineOOBE>
         <SkipUserOOBE>true</SkipUserOOBE>
       </OOBE>
+      <FirstLogonCommands>
+        <SynchronousCommand wcm:action="add">
+          <CommandLine>net accounts /maxpwage:unlimited</CommandLine>
+          <Order>1</Order>
+        </SynchronousCommand>
+
+<!-- Add more FirstLogon commands
+
+        <SynchronousCommand wcm:action="add">
+          <CommandLine>C:\Windows\Setup\Scripts\FirstLogon.cmd</CommandLine>
+          <Order>2</Order>
+        </SynchronousCommand>
+-->
+
+      </FirstLogonCommands>
     </component>
+    
+    <component name="Microsoft-Windows-SecureStartup-FilterDriver" processorArchitecture="%WinNTSetup-Arch%" language="neutral" xmlns:wcm="http://schemas.microsoft.com/WMIConfig/2002/State" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" publicKeyToken="31bf3856ad364e35" versionScope="nonSxS">
+      <PreventDeviceEncryption>true</PreventDeviceEncryption>
+    </component>
+    
   </settings>
 </unattend>

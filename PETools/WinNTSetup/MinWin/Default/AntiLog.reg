@@ -1,0 +1,17 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Cryptography\CatalogDB]
+"CatDBLogging"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Component Based Servicing]
+"EnableLog"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Fax\Device Providers\{2172FD8F-11F6-11D3-90BF-006094EB630B}]
+"LoggingEnabled"=dword:00000000
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\SecEdit]
+"PolicyDebugLevel"=dword:00000000
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DiagnosticLogCSP]
+
+[-HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\MdmDiagnostics]

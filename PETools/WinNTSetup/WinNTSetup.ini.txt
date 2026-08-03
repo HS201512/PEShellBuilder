@@ -1,4 +1,9 @@
+#These are hidden options, that can change the bevaviour of WinNTSetup.
+
 [Options]
+
+#Set Language, en-US will load Lang\en-US.dll
+Lang=
 
 Disables Windows 8+ FastBoot
 NoHiberBoot=0
@@ -16,16 +21,22 @@ IgnoreVHDs=0
 NoBootMount=1
 
 # Dosdevices, Disk number, Disk Id or vendor name to be ignored, when search and mount boot partitions (use | as delimiter)
-# \Device\HarddiskVolume1|Disk1|Msft Virtual Disk
+# example: BootMountExclude=\Device\HarddiskVolume1|Disk1|Msft Virtual Disk
 # Use "WinNTSetup_x64.exe disks" to get vendor name an Disk Id
 BootMountExclude=
 
+# Exclude disks or drives from the selection ComboBox
+# Same format as BootMountExclude
+DriveComboExclude=
 
 # wimgapi or wimlib - (0, 1 or 2) default 0
 # 0 use wimgapi.dll
 # 1 use wimlib.dll
 # 2 use wimgapi for apply and wimlib for capture
 UseWimLIB=2
+
+# always uses wimlib for WimBoot or CompactOS installs- (0 or 1) default 1
+UseWimLIBWOF=
 
 #Add always a TimeStamp to new captured WIM images - (0 or 1) default 0
 WimCaptureAddTimeStamp=
@@ -58,14 +69,22 @@ NoFileSystemChecks=
 #Show all 3 boot part icons on GPT drives - (0 or 1) default 0
 ShowBootRecordIconsOnGPT=
 
-#Hide product keys and IDs (toogle with Ctrl + Alt + K) - (0 or 1) default 0
+#Hide product keys and IDs (toogle with Ctrl + Alt + K) - (0 or 1) default 1
 HideProductKeys=
 
-#Don't ask for download tools, limited mode only avalible for Windows 10+ - (0 or 1) default 0
+#Don't ask for download tools, limited mode only avalible for Windows 10+ - (0 or 1) default 1
 NoDownload=
 
-#Use Mica effect only avalible for Windows 11+ - (0 or 1) default 0
+#Use Mica effect only avalible for Windows 11+ - (0, 1 or 2) default 0
+# 0 - disabled
+# 1 - Use on all windows
+# 2 - Use on main windows, no dialogs
 UseMica=0
+
+#Show wimlib's Chunk Compression options for capture
+# 0 - disabled (default)
+# 1 - enabled
+ChunkCompression=
 
 [WinNT5]
 unattendeditor=Notepad.exe
@@ -77,9 +96,8 @@ unattendeditor=Notepad.exe
 # Professional, Core, Education, Enterprise,
 DefaultSKU= 
 
-
-
-[vhd]
-# set the size of the hidden boot partition in MB
-# size limit is 50 MB minimum, 1000 maximum
-bootpartsize=320
+[WimHost]
+#Run WimHost.exe as TrustedInstaller
+# 0 - disabled
+# 1 - enabled (default)
+RunAsTI=

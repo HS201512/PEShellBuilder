@@ -1,0 +1,29 @@
+;\Windows\System32\WindowsPowerShell
+\Windows\SysWOW64\WindowsPowerShell
+
+;\Program Files\WindowsPowerShell
+\Program Files (x86)\WindowsPowerShell
+
+\ProgramData\Microsoft\Windows\Start Menu\Programs\Windows PowerShell
+\ProgramData\Microsoft\Windows\Start Menu\Programs\Accessories\Windows PowerShell
+\Users\Default\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Windows PowerShell
+
+!\Users\Default\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Windows PowerShell\Windows PowerShell.lnk
+
+
+!\Windows\Microsoft.NET\assembly\GAC_MSIL\*.PowerShell*
+!\Windows\Microsoft.NET\assembly\GAC_64\mscorlib\*
+!\Windows\Microsoft.NET\assembly\GAC_64\System.Data\*
+!\Windows\Microsoft.NET\assembly\GAC_64\System.Transactions\*
+
+!\Windows\Microsoft.NET\assembly\GAC_MSIL\Microsoft.Management.Infrastructure*
+!\Windows\Microsoft.NET\assembly\GAC_MSIL\Microsoft.PowerShell.*
+!\Windows\Microsoft.NET\assembly\GAC_MSIL\mscorlib.resources\*
+!\Windows\Microsoft.NET\assembly\GAC_MSIL\System\*
+!\Windows\Microsoft.NET\assembly\GAC_MSIL\System.Configuration*
+!\Windows\Microsoft.NET\assembly\GAC_MSIL\System.Core\*
+!\Windows\Microsoft.NET\assembly\GAC_MSIL\System.Core.resources\*
+!\Windows\Microsoft.NET\assembly\GAC_MSIL\System.DirectoryServices*
+!\Windows\Microsoft.NET\assembly\GAC_MSIL\System.Management*
+!\Windows\Microsoft.NET\assembly\GAC_MSIL\System.Numerics*
+!\Windows\Microsoft.NET\assembly\GAC_MSIL\System.Xml*

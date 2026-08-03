@@ -1,6 +1,7 @@
 Place following files here:
 
 Windows6.1-KB2864202-x??.msu
+Windows6.1-KB4474419-v3-x??.msu
 
 x??\XHCI\ucx01000.sys
 x??\XHCI\usbd8.sys

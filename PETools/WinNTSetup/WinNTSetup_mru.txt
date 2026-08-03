@@ -4,6 +4,7 @@
 [RegTweaks_NT6]
 [OEM_NT6]
 [RunAfter_NT6]
+[DISM]
 [Source_NT5]
 [Drivers_NT5]
 [UnattendedFile_NT5]
@@ -16,3 +17,4 @@
 [Unattend_Org]
 [Unattend_Computer]
 [Unattend_Workgroup]
+[WimCaptureTarget]

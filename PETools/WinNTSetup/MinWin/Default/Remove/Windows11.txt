@@ -1,0 +1,39 @@
+;22000 // Only used for Win11 and higher
+
+!\Windows\System32\SwitcherDataModel.dll // is responsible for the initial call to the control panel
+!\Windows\System32\ServicingUAPI.dll // responsible for displaying the content of the control panel
+!\Windows\System32\SettingsHandlers_Gpu.dll // display options
+!\Windows\System32\SettingsHandlers_OneCore_BatterySaver.dll // power options
+!\Windows\System32\Windows.Management.Workplace.dll // set wallpaper
+
+;volume tray flyout
+!\Windows\ShellExperiences\NetworkUX.dll
+!\Windows\System32\MBMediaManager.dll
+!\Windows\System32\MtcModel.dll
+
+;Windows 11 Calendar / Volume fylouts
+;!\Windows\SystemApps\ShellExperienceHost_*\*
+
+!\Windows\SystemApps\ShellExperienceHost_*\AppxManifest.xml
+!\Windows\SystemApps\ShellExperienceHost_*\AppxSignature.p7x
+!\Windows\SystemApps\ShellExperienceHost_*\ClockFlyoutExperience.dll
+!\Windows\SystemApps\ShellExperienceHost_*\DevicesFlowUI.dll
+!\Windows\SystemApps\ShellExperienceHost_*\microsoft.system.package.metadata
+!\Windows\SystemApps\ShellExperienceHost_*\pris\resources.*.pri
+!\Windows\SystemApps\ShellExperienceHost_*\resources.pri
+!\Windows\SystemApps\ShellExperienceHost_*\ShellExperienceHost.exe
+!\Windows\SystemApps\ShellExperienceHost_*\Windows.UI.ActionCenter.dll
+!\Windows\SystemApps\ShellExperienceHost_*\Windows.UI.QuickActions.dll
+
+;!\Windows\SystemApps\Microsoft.BioEnrollment_*
+
+!\Windows\SystemApps\Microsoft.BioEnrollment_*\AppxManifest.xml
+!\Windows\SystemApps\Microsoft.BioEnrollment_*\microsoft.system.package.metadata
+!\Windows\SystemApps\Microsoft.BioEnrollment_*\pris\resources.*.pri
+!\Windows\SystemApps\Microsoft.BioEnrollment_*\resources.pri
+
+22500 !\Windows\System32\Windows.Devices.Lights.dll // # 25284 DWM
+22500 !\Windows\System32\bindfltapi.dll // # 25300 Explorer
+22500 !\Windows\System32\windows.ui.accessibility.dll // Taskbar
+
+!\Windows\System32\appidapi.dll // cmd.exe 

@@ -1,0 +1,31 @@
+\Program Files\Reference Assemblies
+\Program Files\MSBuild
+\Program Files (x86)\Microsoft.NET
+\Program Files (x86)\MSBuild
+\Program Files (x86)\Reference Assemblies
+\Windows\assembly
+\Windows\INF\.NET CLR Data
+\Windows\INF\.NET CLR Networking
+\Windows\INF\.NET CLR Networking 4.0.0.0
+\Windows\INF\.NET Data Provider for Oracle
+\Windows\INF\.NET Data Provider for SqlServer
+\Windows\INF\.NET Memory Cache 4.0
+\Windows\INF\.NETFramework
+\Windows\Microsoft.NET
+
+\Program Files\dotnet
+\Program Files (x86)\dotnet
+
+\Windows\System32\mscoree.dll
+\Windows\System32\mscorier.dll
+\Windows\System32\mscories.dll
+
+\Windows\SysWOW64\mscoree.dll
+\Windows\SysWOW64\mscorier.dll
+\Windows\SysWOW64\mscories.dll
+
+
+
+\Windows\System32\mscoree.dll
+\Windows\System32\mscorier.dll
+\Windows\System32\mscories.dll
