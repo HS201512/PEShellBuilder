@@ -8,7 +8,7 @@
 位于此目录的 PETools 文件夹里，您可以添加工具<br>
 
 - 自定义壁纸
-注意：此设置可能对某些Win11无效
+注意：此设置可能对某些Win11无效<br>
 如果是Windows 11，位于此目录的 Wallpaper\11\winre.jpg<br>
 如果是Windows 10，位于此目录的 Wallpaper\11\winre.jpg<br>
 如果是其他的Windows，位于此目录的 Wallpaper\normal\winre.jpg<br>
