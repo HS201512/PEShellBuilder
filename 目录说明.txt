@@ -1,8 +1,4 @@
-# PEShellBuilder
-此工具可以让您自定义 Windows PE（例如壁纸、工具）
-建议使用 Windows 8、10、11
-
-# PEShellBuilder 目录说明
+PEShellBuilder 目录说明
 
 版本：v1.00 Feature Pack 2
 

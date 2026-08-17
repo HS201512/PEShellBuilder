@@ -1,0 +1,27 @@
+==============================================
+启动分区助手：
+StartPartAssit.exe: 专用用来启动分区助手的；
+
+==============================================
+文件说明：
+PartAssist.exe: 分区助手的主程序;
+2Gpt_BCD, 2Mbr_BCD: 为无损数据转换GPT到MBR或MBR到GPT磁盘提供支持；
+cfg.ini: 指示分区助手要加载的语言文件在什么位置;
+import.reg, setup.bat, winsxs目录: 向注册表中写入运行分区助手所必需的支持库信息和向Windows的WinSxS写入运行分区助手所需要的动态库;
+LoadDrv_Win32.exe, LoadDrv_x64.exe: 安装PE下运行分区助手可能需要的驱动程序，驱动程序存放在：native目录中；
+mfc80.dll, mfc80u.dll, mfcm80.dll, mfcm80u.dll, Microsoft.VC80.MFC.manifest: 分区助手运行所必须的MFC界面库;
+msvcm80.dll, msvcp80.dll, msvcr80.dll, Microsoft.VC80.MFC.manifest: 分区助手运行所必须的基础程序库;
+ScanPartition.dll: 为分区助手的恢复分区功能提供支撑;
+SetupGreen32.exe, SetupGreen64.exe: 分区助手作为一个绿色版运行所必需的文件;
+
+==============================================
+其它说明：
+1.如果你的WinPE是基于XP或2003的系统制作的，则下面的文件是可以删除：native整个目录，LoadDrv_Win32.exe，LoadDrv_x64.exe，SetupGreen32.exe，SetupGreen64.exe。
+
+2.可能在你的WinPE中启动主程序时会提示什么dll库找不到的情况,如提示urlmon.dll找不到，这些文件可能是你的WinPE做的太过精减，这时你需要从网上下载这些文件，并复制到分区助手的工作目录中。
+
+3.如果在你的WinPE下，分区助手显示乱码，你可以修改lang\cn.txt文件里的字体，为FontName指定一个可用的字体名，也可以使用FontSize来设置文字的大小。如果FontName、FontSize为空表示使用系统默认的字体与字号。
+
+==============================================
+技术支持：
+如果你还有任何问题，可以访问我们的网站www.disktool.cn或发邮件到aomeitech@163.com，谢谢！

@@ -1,0 +1,1 @@
+MsgBox(App.Name, App.FullPath)

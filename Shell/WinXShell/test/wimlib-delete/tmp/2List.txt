@@ -1,0 +1,2 @@
+\Windows\System32\abc.dll
+\Windows\System32\xyz.dll

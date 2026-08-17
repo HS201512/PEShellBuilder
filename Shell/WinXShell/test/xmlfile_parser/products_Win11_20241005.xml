@@ -1,0 +1,208 @@
+<MCT>
+  <Catalogs>
+    <Catalog version="2.0">
+      <PublishedMedia id="" release="">
+        <Files>
+          <File id="">
+            <FileName>26100.2033.241004-2336.ge_release_svc_refresh_CLIENTCHINA_RET_x64FRE_zh-cn.esd</FileName>
+            <LanguageCode>zh-cn</LanguageCode>
+            <Language>Chinese (China)</Language>
+            <Edition>CoreCountrySpecific</Edition>
+            <Architecture>x64</Architecture>
+            <Size>4047225891</Size>
+            <Sha1>ac48143171d17f45ef5829377616e4e951dbf6cc</Sha1>
+            <FilePath>http://dl.delivery.mp.microsoft.com/filestreamingservice/files/eae9f427-3130-4b84-a01f-43a58bcd3856/26100.2033.241004-2336.ge_release_svc_refresh_CLIENTCHINA_RET_x64FRE_zh-cn.esd</FilePath>
+            <Key />
+            <Architecture_Loc>%ARCH_64%</Architecture_Loc>
+            <Edition_Loc>%BASE_CHINA%</Edition_Loc>
+            <IsRetailOnly>False</IsRetailOnly>
+          </File>
+          <File id="">
+            <FileName>26100.2033.241004-2336.ge_release_svc_refresh_CLIENTCONSUMER_RET_A64FRE_zh-cn.esd</FileName>
+            <LanguageCode>zh-cn</LanguageCode>
+            <Language>Chinese (China)</Language>
+            <Edition>Professional</Edition>
+            <Architecture>ARM64</Architecture>
+            <Size>4148320731</Size>
+            <Sha1>c5277a105d6a7eb6f3b55867281a7576a0443ef6</Sha1>
+            <FilePath>http://dl.delivery.mp.microsoft.com/filestreamingservice/files/d559910e-90e3-467d-aa5a-1a397fd0dab5/26100.2033.241004-2336.ge_release_svc_refresh_CLIENTCONSUMER_RET_A64FRE_zh-cn.esd</FilePath>
+            <Key />
+            <Architecture_Loc>%ARCH_64%</Architecture_Loc>
+            <Edition_Loc>%CLIENT%</Edition_Loc>
+            <IsRetailOnly>True</IsRetailOnly>
+          </File>
+          <File id="">
+            <FileName>26100.2033.241004-2336.ge_release_svc_refresh_CLIENTCONSUMER_RET_A64FRE_zh-cn.esd</FileName>
+            <LanguageCode>zh-cn</LanguageCode>
+            <Language>Chinese (China)</Language>
+            <Edition>ProfessionalN</Edition>
+            <Architecture>ARM64</Architecture>
+            <Size>4148320731</Size>
+            <Sha1>c5277a105d6a7eb6f3b55867281a7576a0443ef6</Sha1>
+            <FilePath>http://dl.delivery.mp.microsoft.com/filestreamingservice/files/d559910e-90e3-467d-aa5a-1a397fd0dab5/26100.2033.241004-2336.ge_release_svc_refresh_CLIENTCONSUMER_RET_A64FRE_zh-cn.esd</FilePath>
+            <Key />
+            <Architecture_Loc>%ARCH_64%</Architecture_Loc>
+            <Edition_Loc>%CLIENT%</Edition_Loc>
+            <IsRetailOnly>True</IsRetailOnly>
+          </File>
+          <File id="">
+            <FileName>26100.2033.241004-2336.ge_release_svc_refresh_CLIENTCONSUMER_RET_A64FRE_zh-cn.esd</FileName>
+            <LanguageCode>zh-cn</LanguageCode>
+            <Language>Chinese (China)</Language>
+            <Edition>ProfessionalEducation</Edition>
+            <Architecture>ARM64</Architecture>
+            <Size>4148320731</Size>
+            <Sha1>c5277a105d6a7eb6f3b55867281a7576a0443ef6</Sha1>
+            <FilePath>http://dl.delivery.mp.microsoft.com/filestreamingservice/files/d559910e-90e3-467d-aa5a-1a397fd0dab5/26100.2033.241004-2336.ge_release_svc_refresh_CLIENTCONSUMER_RET_A64FRE_zh-cn.esd</FilePath>
+            <Key />
+            <Architecture_Loc>%ARCH_64%</Architecture_Loc>
+            <Edition_Loc>%CLIENT%</Edition_Loc>
+            <IsRetailOnly>True</IsRetailOnly>
+          </File>
+          <File id="">
+            <FileName>26100.2033.241004-2336.ge_release_svc_refresh_CLIENTCONSUMER_RET_A64FRE_zh-cn.esd</FileName>
+            <LanguageCode>zh-cn</LanguageCode>
+            <Language>Chinese (China)</Language>
+            <Edition>ProfessionalEducationN</Edition>
+            <Architecture>ARM64</Architecture>
+            <Size>4148320731</Size>
+            <Sha1>c5277a105d6a7eb6f3b55867281a7576a0443ef6</Sha1>
+            <FilePath>http://dl.delivery.mp.microsoft.com/filestreamingservice/files/d559910e-90e3-467d-aa5a-1a397fd0dab5/26100.2033.241004-2336.ge_release_svc_refresh_CLIENTCONSUMER_RET_A64FRE_zh-cn.esd</FilePath>
+            <Key />
+            <Architecture_Loc>%ARCH_64%</Architecture_Loc>
+            <Edition_Loc>%CLIENT%</Edition_Loc>
+            <IsRetailOnly>True</IsRetailOnly>
+          </File>
+          <File id="">
+            <FileName>26100.2033.241004-2336.ge_release_svc_refresh_CLIENTCONSUMER_RET_A64FRE_zh-cn.esd</FileName>
+            <LanguageCode>zh-cn</LanguageCode>
+            <Language>Chinese (China)</Language>
+            <Edition>ProfessionalWorkstation</Edition>
+            <Architecture>ARM64</Architecture>
+            <Size>4148320731</Size>
+            <Sha1>c5277a105d6a7eb6f3b55867281a7576a0443ef6</Sha1>
+            <FilePath>http://dl.delivery.mp.microsoft.com/filestreamingservice/files/d559910e-90e3-467d-aa5a-1a397fd0dab5/26100.2033.241004-2336.ge_release_svc_refresh_CLIENTCONSUMER_RET_A64FRE_zh-cn.esd</FilePath>
+            <Key />
+            <Architecture_Loc>%ARCH_64%</Architecture_Loc>
+            <Edition_Loc>%CLIENT%</Edition_Loc>
+            <IsRetailOnly>True</IsRetailOnly>
+          </File>
+          <File id="">
+            <FileName>26100.2033.241004-2336.ge_release_svc_refresh_CLIENTCONSUMER_RET_A64FRE_zh-cn.esd</FileName>
+            <LanguageCode>zh-cn</LanguageCode>
+            <Language>Chinese (China)</Language>
+            <Edition>ProfessionalWorkstationN</Edition>
+            <Architecture>ARM64</Architecture>
+            <Size>4148320731</Size>
+            <Sha1>c5277a105d6a7eb6f3b55867281a7576a0443ef6</Sha1>
+            <FilePath>http://dl.delivery.mp.microsoft.com/filestreamingservice/files/d559910e-90e3-467d-aa5a-1a397fd0dab5/26100.2033.241004-2336.ge_release_svc_refresh_CLIENTCONSUMER_RET_A64FRE_zh-cn.esd</FilePath>
+            <Key />
+            <Architecture_Loc>%ARCH_64%</Architecture_Loc>
+            <Edition_Loc>%CLIENT%</Edition_Loc>
+            <IsRetailOnly>True</IsRetailOnly>
+          </File>
+          <File id="">
+            <FileName>26100.2033.241004-2336.ge_release_svc_refresh_CLIENTCONSUMER_RET_A64FRE_zh-cn.esd</FileName>
+            <LanguageCode>zh-cn</LanguageCode>
+            <Language>Chinese (China)</Language>
+            <Edition>Core</Edition>
+            <Architecture>ARM64</Architecture>
+            <Size>4148320731</Size>
+            <Sha1>c5277a105d6a7eb6f3b55867281a7576a0443ef6</Sha1>
+            <FilePath>http://dl.delivery.mp.microsoft.com/filestreamingservice/files/d559910e-90e3-467d-aa5a-1a397fd0dab5/26100.2033.241004-2336.ge_release_svc_refresh_CLIENTCONSUMER_RET_A64FRE_zh-cn.esd</FilePath>
+            <Key />
+            <Architecture_Loc>%ARCH_64%</Architecture_Loc>
+            <Edition_Loc>%CLIENT%</Edition_Loc>
+            <IsRetailOnly>True</IsRetailOnly>
+          </File>
+          <File id="">
+            <FileName>26100.2033.241004-2336.ge_release_svc_refresh_CLIENTCONSUMER_RET_A64FRE_zh-cn.esd</FileName>
+            <LanguageCode>zh-cn</LanguageCode>
+            <Language>Chinese (China)</Language>
+            <Edition>CoreN</Edition>
+            <Architecture>ARM64</Architecture>
+            <Size>4148320731</Size>
+            <Sha1>c5277a105d6a7eb6f3b55867281a7576a0443ef6</Sha1>
+            <FilePath>http://dl.delivery.mp.microsoft.com/filestreamingservice/files/d559910e-90e3-467d-aa5a-1a397fd0dab5/26100.2033.241004-2336.ge_release_svc_refresh_CLIENTCONSUMER_RET_A64FRE_zh-cn.esd</FilePath>
+            <Key />
+            <Architecture_Loc>%ARCH_64%</Architecture_Loc>
+            <Edition_Loc>%CLIENT%</Edition_Loc>
+            <IsRetailOnly>True</IsRetailOnly>
+          </File>
+          <File id="">
+            <FileName>26100.2033.241004-2336.ge_release_svc_refresh_CLIENTCONSUMER_RET_A64FRE_zh-cn.esd</FileName>
+            <LanguageCode>zh-cn</LanguageCode>
+            <Language>Chinese (China)</Language>
+            <Edition>CoreSingleLanguage</Edition>
+            <Architecture>ARM64</Architecture>
+            <Size>4148320731</Size>
+            <Sha1>c5277a105d6a7eb6f3b55867281a7576a0443ef6</Sha1>
+            <FilePath>http://dl.delivery.mp.microsoft.com/filestreamingservice/files/d559910e-90e3-467d-aa5a-1a397fd0dab5/26100.2033.241004-2336.ge_release_svc_refresh_CLIENTCONSUMER_RET_A64FRE_zh-cn.esd</FilePath>
+            <Key />
+            <Architecture_Loc>%ARCH_64%</Architecture_Loc>
+            <Edition_Loc>%CLIENT%</Edition_Loc>
+            <IsRetailOnly>True</IsRetailOnly>
+          </File>
+          <File id="">
+            <FileName>26100.2033.241004-2336.ge_release_svc_refresh_CLIENTCONSUMER_RET_A64FRE_zh-cn.esd</FileName>
+            <LanguageCode>zh-cn</LanguageCode>
+            <Language>Chinese (China)</Language>
+            <Edition>Education</Edition>
+            <Architecture>ARM64</Architecture>
+            <Size>4148320731</Size>
+            <Sha1>c5277a105d6a7eb6f3b55867281a7576a0443ef6</Sha1>
+            <FilePath>http://dl.delivery.mp.microsoft.com/filestreamingservice/files/d559910e-90e3-467d-aa5a-1a397fd0dab5/26100.2033.241004-2336.ge_release_svc_refresh_CLIENTCONSUMER_RET_A64FRE_zh-cn.esd</FilePath>
+            <Key />
+            <Architecture_Loc>%ARCH_64%</Architecture_Loc>
+            <Edition_Loc>%CLIENT%</Edition_Loc>
+            <IsRetailOnly>True</IsRetailOnly>
+          </File>
+          <File id="">
+            <FileName>26100.2033.241004-2336.ge_release_svc_refresh_CLIENTCONSUMER_RET_A64FRE_zh-cn.esd</FileName>
+            <LanguageCode>zh-cn</LanguageCode>
+            <Language>Chinese (China)</Language>
+            <Edition>EducationN</Edition>
+            <Architecture>ARM64</Architecture>
+            <Size>4148320731</Size>
+            <Sha1>c5277a105d6a7eb6f3b55867281a7576a0443ef6</Sha1>
+            <FilePath>http://dl.delivery.mp.microsoft.com/filestreamingservice/files/d559910e-90e3-467d-aa5a-1a397fd0dab5/26100.2033.241004-2336.ge_release_svc_refresh_CLIENTCONSUMER_RET_A64FRE_zh-cn.esd</FilePath>
+            <Key />
+            <Architecture_Loc>%ARCH_64%</Architecture_Loc>
+            <Edition_Loc>%CLIENT%</Edition_Loc>
+            <IsRetailOnly>True</IsRetailOnly>
+          </File>
+        </Files>
+        <Languages>
+          <Language LanguageCode="default">
+            <BASE>Windows 11 Home</BASE>
+            <BASE_K>Windows 11 Home K</BASE_K>
+            <BASE_N>Windows 11 Home N</BASE_N>
+            <BASE_KN>Windows 11 Home KN</BASE_KN>
+            <PRO>Windows 11 Pro</PRO>
+            <PRO_K>Windows 11 Pro K</PRO_K>
+            <PRO_N>Windows 11 Pro N</PRO_N>
+            <PRO_KN>Windows 11 Pro KN</PRO_KN>
+            <SINGLE_LANGUAGE>Windows 11 Home Single Language</SINGLE_LANGUAGE>
+            <BASE_CHINA>Windows 11 Home (China only)</BASE_CHINA>
+            <ARCH_32>32-bit (x86)</ARCH_32>
+            <ARCH_64>64-bit (x64)</ARCH_64>
+            <EDU>Windows 11 Education</EDU>
+            <EDU_K>Windows 11 Education K</EDU_K>
+            <EDU_N>Windows 11 Education N</EDU_N>
+            <EDU_KN>Windows 11 Education KN</EDU_KN>
+            <CLIENT>Windows 11</CLIENT>
+            <CLIENT_K>Windows 11 K</CLIENT_K>
+            <CLIENT_N>Windows 11 N</CLIENT_N>
+            <CLIENT_KN>Windows 11 KN</CLIENT_KN>
+            <CLOUD>Windows 11 S</CLOUD>
+            <CLOUD_N>Windows 11 SN</CLOUD_N>
+            <ENTERPRISE>Windows 11 Enterprise</ENTERPRISE>
+            <ENTERPRISE_N>Windows 11 Enterprise N</ENTERPRISE_N>
+          </Language>
+        </Languages>
+        <EULAs>
+        </EULAs>
+      </PublishedMedia>
+    </Catalog>
+  </Catalogs>
+</MCT>
