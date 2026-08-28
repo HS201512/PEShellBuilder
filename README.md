@@ -1,3 +1,8 @@
+# 🚀快速下载
+[v1.02 Portable](https://github.com/HS201512/PEShellBuilder/releases/download/v1.02/PEShellBuilder_v1.02_Portable.zip)
+[v1.02 Setup](https://github.com/HS201512/PEShellBuilder/releases/download/v1.02/PEShellBuilder_v1.02_Setup.exe)
+[v1.02 SingleFile](https://github.com/HS201512/PEShellBuilder/releases/download/v1.02/PEShellBuilder_v1.02_SingleFile.exe)
+
 # PEShellBuilder
 此工具可以让您自定义 Windows PE（例如壁纸、工具）<br>
 建议使用 Windows 8、10、11
