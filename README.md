@@ -1,7 +1,7 @@
 # 🚀快速下载
-[v1.02 Portable](https://github.com/HS201512/PEShellBuilder/releases/download/v1.02/PEShellBuilder_v1.02_Portable.zip)
-[v1.02 Setup](https://github.com/HS201512/PEShellBuilder/releases/download/v1.02/PEShellBuilder_v1.02_Setup.exe)
-[v1.02 SingleFile](https://github.com/HS201512/PEShellBuilder/releases/download/v1.02/PEShellBuilder_v1.02_SingleFile.exe)
+[v1.02 Portable](https://github.com/HS201512/PEShellBuilder/releases/download/v1.02/PEShellBuilder_v1.02_Portable.zip)<br>
+[v1.02 Setup](https://github.com/HS201512/PEShellBuilder/releases/download/v1.02/PEShellBuilder_v1.02_Setup.exe)<br>
+[v1.02 SingleFile](https://github.com/HS201512/PEShellBuilder/releases/download/v1.02/PEShellBuilder_v1.02_SingleFile.exe)<br>
 
 # PEShellBuilder
 此工具可以让您自定义 Windows PE（例如壁纸、工具）<br>
@@ -73,5 +73,5 @@ PEStartup.bat要和程序放到同一个目录（如果没有程序则忽略）<
 新建名为Packages的文件夹，可以把要添加的cab（包括更新）放到Packages文件夹里<br>
 
 - 预置资源
-在此目录下新建Preset目录，里面的数据将会映射到X盘根目录
->>>>>>> e6011d03d06bf9b42baae697f03d4bfa7eadde0b
+在此目录下新建Preset目录，里面的数据将会映射到X盘根目录<br>
+>>>>>>> e6011d03d06bf9b42baae697f03d4bfa7eadde0b<br>
