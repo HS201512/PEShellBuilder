@@ -1,6 +1,6 @@
 PEShellBuilder 目录说明
 
-版本：v1.00 Feature Pack 2
+版本：v1.02
 
 - 前言
 这是 PEShellBuilder 的目录说明（给人看的，删除此文件不影响 PEShellBuilder 运行）
@@ -39,3 +39,6 @@ WinXShell WinXShell所在的目录（您可以自定义WinXShell.jcfg）
 
 - PEShellBuilder 要用到的工具
 位于此目录的 bin 文件夹，不要去动它
+
+- 预置资源
+在此目录下新建Preset目录，里面的数据将会映射到X盘根目录

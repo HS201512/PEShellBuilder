@@ -1,7 +1,7 @@
 @echo off
 if "%1"=="/?" goto help
 cls
-title PEShellBuilder v1.00 功能包 2
+title PEShellBuilder v1.02
 if not exist %windir%\zh-cn\*.mui goto langerror
 if /i "%PROCESSOR_ARCHITECTURE%"=="X86" goto oserror
 if /i "%PROCESSOR_ARCHITECTURE%"=="ARM64" goto oserror
@@ -18,7 +18,8 @@ cd /d "%~dp0"
 
 :main
 path=%path%;%~dp0bin
-echo PEShellBuilder v1.00 功能包 2
+cls
+echo PEShellBuilder v1.02
 echo.
 echo 欢迎使用 PEShellBuilder！
 echo 此工具可以帮您自定义 Windows PE 并生成 ISO
@@ -102,13 +103,12 @@ if "%sn%"=="WinXShell" (
     echo 关机：Ctrl+Shift+S
     echo.
 )
-echo 如果有WinNTSetup，则不需要再添加BootICE
 echo 如果选择F，那么PE将不带任何第三方工具
 set /p choice=是否自定义工具？（Y/N/F）：
 if /i "%choice%"=="Y" (
     explorer "%~dp0PETools"
     notepad "%~dp0Shell\PEShell\PEShell.bat"
-    notepad "%~dp0Shell\Normal\pecmd.ini"
+    notepad "%~dp0Shell\Normal\basicset.ini"
     pause
     goto ca2023
 )
@@ -165,9 +165,57 @@ echo.
 echo Windows PE 版本
 echo %pever%
 echo.
-echo 如果正确，按任意键继续
+if "%xsize%"=="" set xsize=4094
+echo 如果正确，输入C继续
 echo 如果错误，退出并重新配置
-pause >nul
+echo 输入A进入高级选项
+set /p mkpe=输入选项：
+if /i "%mkpe%"=="C" goto makingpe
+if /i "%mkpe%"=="A" goto advanced
+exit
+
+:advanced
+cls
+echo 高级选项
+echo.
+echo 1.内存盘大小
+echo 2.分卷设置
+echo 3.返回
+echo.
+set /p adva=输入选项：
+if "%adva%"=="1" goto xsize
+if "%adva%"=="2" goto volname
+if "%adva%"=="3" goto infos
+exit
+
+:xsize
+cls
+echo 内存盘大小
+echo.
+echo 默认4GB
+echo.
+echo 4GB
+echo 2GB
+echo 1GB
+echo 512MB
+echo 256MB
+echo.
+set /p xsize=输入大小：
+if /i "%xsize%"=="4GB" set xsize=4094&goto advanced
+if /i "%xsize%"=="2GB" set xsize=2046&goto advanced
+if /i "%xsize%"=="1GB" set xsize=1022&goto advanced
+if /i "%xsize%"=="512MB" set xsize=510&goto advanced
+if /i "%xsize%"=="256MB" set xsize=254&goto advanced
+exit
+
+:volname
+cls
+echo 分卷设置
+echo.
+echo 示例：derasd的Windows PE
+set /p name=输入分卷名称：
+set /p inst=输入分卷说明：
+goto advanced
 
 :makingpe
 cls
@@ -217,6 +265,7 @@ if "%sn%"=="WinXShell" (
 )
 echo.
 echo 复制文件……
+if exist "%~dp0Preset" xcopy "%~dp0Preset" "%~dp0temp\mount" /E /H /I /R /Y >nul
 wimlib-imagex extract "%drv%:\sources\install.wim" 1 "\Windows\System32\oledlg.dll" --dest-dir="%~dp0temp\mount\Windows\System32"
 wimlib-imagex extract "%drv%:\sources\install.wim" 1 "\Windows\System32\zh-cn\oledlg.dll.mui" --dest-dir="%~dp0temp\mount\Windows\System32\zh-cn"
 wimlib-imagex extract "%drv%:\sources\install.wim" 1 "\Windows\System32\comctl32.dll" --dest-dir="%~dp0temp\mount\Windows\System32"
@@ -263,7 +312,7 @@ if /i "%1"=="/s" (
     reg add "HKLM\PE_SYSTEM\Setup\LabConfig" /v "BypassRAMCheck" /t REG_DWORD /d "1" /f >nul
     reg add "HKLM\PE_SYSTEM\Setup\LabConfig" /v "BypassSecureBootCheck" /t REG_DWORD /d "1" /f >nul
 )
-reg add "HKLM\PE_SYSTEM\ControlSet001\Services\FBWF" /v "WinPECacheThreshold" /t REG_DWORD /d "4094" /f >nul
+reg add "HKLM\PE_SYSTEM\ControlSet001\Services\FBWF" /v "WinPECacheThreshold" /t REG_DWORD /d "%xsize%" /f >nul
 reg add "HKLM\PE_SYSTEM\ControlSet001\Services\FBWF" /v "Start" /t REG_DWORD /d "0" /f >nul
 reg add "HKLM\PE_SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System" /v "EnableCursorSuppression" /t REG_DWORD /d "0" /f >nul
 reg add "HKLM\PE_SOFTWARE\Microsoft\Windows NT\CurrentVersion\ProfileList\S-1-5-18" /v "ProfileImagePath" /t REG_EXPAND_SZ /d "X:\Users\Default" /f >nul
@@ -280,6 +329,7 @@ if exist "%~dp0Packages\*.cab" (
 dism /image:"%~dp0temp\mount" /set-targetpath:X:\
 dism /unmount-wim /mountdir:"%~dp0temp\mount" /commit
 dism /export-image /sourceimagefile:"%~dp0temp\wim\%wim%" /sourceindex:1 /destinationimagefile:"%~dp0ISO\sources\boot.wim" /bootable
+if not "%name%"=="" wimlib-imagex info "%~dp0ISO\sources\boot.wim" 1 "%name%" "%inst%" >nul
 goto makeiso
 
 :peshell
@@ -309,6 +359,7 @@ if exist "%~dp0packages\*.cab" (
 dism /image:"%~dp0temp\mount" /set-targetpath:X:\
 dism /unmount-wim /mountdir:"%~dp0temp\mount" /commit
 dism /export-image /sourceimagefile:"%~dp0temp\wim\%wim%" /sourceindex:1 /destinationimagefile:"%~dp0ISO\sources\boot.wim" /bootable
+if not "%name%"=="" wimlib-imagex info "%~dp0ISO\sources\boot.wim" 1 "%name%" "%inst%" >nul
 goto makeiso
 
 :makeiso
@@ -370,7 +421,7 @@ pause >nul
 exit /b
 
 :langerror
-title PEShellBuilder v1.00 Feature Pack 2
+title PEShellBuilder v1.02
 echo Error: Not support of this system
 echo.
 echo The reason for this issue may be:
@@ -382,7 +433,7 @@ exit /b
 
 :help
 echo.
-echo PEShellBuilder v1.00 功能包 2
+echo PEShellBuilder v1.02
 echo.
 echo ^/f 不推荐：强制跳过映像检测
 echo ^/s 让 PE 强制绕过 Windows 11 安装程序硬件检测

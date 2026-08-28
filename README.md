@@ -5,7 +5,7 @@
 # PEShellBuilder 目录说明
 
 <<<<<<< HEAD
-版本：v1.00 Feature Pack 2
+版本：v1.02
 
 - 前言
 这是 PEShellBuilder 的目录说明（给人看的，删除此文件不影响 PEShellBuilder 运行）
@@ -66,4 +66,7 @@ PEStartup.bat要和程序放到同一个目录（如果没有程序则忽略）<
 - 自定义程序包
 注意：现在Win11的LCU都是wim或msu格式了，仅支持cab格式的程序包<br>
 新建名为Packages的文件夹，可以把要添加的cab（包括更新）放到Packages文件夹里<br>
+
+- 预置资源
+在此目录下新建Preset目录，里面的数据将会映射到X盘根目录
 >>>>>>> e6011d03d06bf9b42baae697f03d4bfa7eadde0b
