@@ -1,3 +1,5 @@
+# 如果是小白，最好读完。
+
 # 🚀快速下载
 [v1.02 Portable](https://github.com/HS201512/PEShellBuilder/releases/download/v1.02/PEShellBuilder_v1.02_Portable.zip)<br>
 [v1.02 Setup](https://github.com/HS201512/PEShellBuilder/releases/download/v1.02/PEShellBuilder_v1.02_Setup.exe)<br>
