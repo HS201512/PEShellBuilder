@@ -9,7 +9,6 @@
 
 # PEShellBuilder 目录说明
 
-<<<<<<< HEAD
 版本：v1.02
 
 - 前言
