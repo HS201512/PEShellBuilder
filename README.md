@@ -9,16 +9,16 @@
 ISO默认放在脚本目录的“Windows 版本 PE 框架 x64.iso”，如果要更改，直接输入绝对路径即可。（br）
 
 # 其他版本的说明
-- 安装版
+- 安装版<br>
   运行安装程序。最后如果报错740，则运行快捷方式的 PEShellBuilder（正常也一样）。<br>
-- 单文件版
+- 单文件版<br>
   运行后等待一段时间则会自动弹出 PEShellBuilder。内容将释放到 C:\PEShellBuilder。下次可以不运行该程序，管理员运行 C:\PEShellBuilder\PEShellBuilder.cmd 即可。<br>
 
 # 框架说明
 说大白话吧。
-- WinXShell
+- WinXShell<br>
   如果想要带桌面的 PE，这无疑是您的最佳之选。（桌面 开始菜单分类齐全、内存盘大小有效）<br>
-- PEShell
+- PEShell<br>
   如果想要更轻量的命令行 PE，这无疑是您的最佳之选。（无桌面，命令行可输入序号启动程序、电源选项等）<br>
 
 # PEShellBuilder
