@@ -3,9 +3,27 @@
 [v1.02 Setup](https://github.com/HS201512/PEShellBuilder/releases/download/v1.02/PEShellBuilder_v1.02_Setup.exe)<br>
 [v1.02 SingleFile](https://github.com/HS201512/PEShellBuilder/releases/download/v1.02/PEShellBuilder_v1.02_SingleFile.exe)<br>
 
+# 使用方法
+先挂载 Windows ISO，记住挂载盘符（或者使用物理介质的盘符），<br>
+如果是zip包，解压后管理员权限运行PEShellBuilder.cmd即可运行，在里面输入盘符，一路按喜好配置即可生成ISO。 <br>
+ISO默认放在脚本目录的“Windows 版本 PE 框架 x64.iso”，如果要更改，直接输入绝对路径即可。（br）
+
+# 其他版本的说明
+- 安装版
+  运行安装程序。最后如果报错740，则运行快捷方式的 PEShellBuilder（正常也一样）。<br>
+- 单文件版
+  运行后等待一段时间则会自动弹出 PEShellBuilder。内容将释放到 C:\PEShellBuilder。下次可以不运行该程序，管理员运行 C:\PEShellBuilder\PEShellBuilder.cmd 即可。<br>
+
+# 框架说明
+说大白话吧。
+- WinXShell
+  如果想要带桌面的 PE，这无疑是您的最佳之选。（桌面 开始菜单分类齐全、内存盘大小有效）<br>
+- PEShell
+  如果想要更轻量的命令行 PE，这无疑是您的最佳之选。（无桌面，命令行可输入序号启动程序、电源选项等）<br>
+
 # PEShellBuilder
 此工具可以让您自定义 Windows PE（例如壁纸、工具）<br>
-建议使用 Windows 8、10、11
+必须使用 Windows 8、10、11 的ISO
 
 # PEShellBuilder 目录说明
 
