@@ -1,8 +1,9 @@
 **你现在看到的是一个0Star、0Watch的项目**。作者累了半天才研究出这个法子，制作不易。如果对你有帮助的话轻轻点个Star吧！😘
-# 如果是小白，最好读完。
 
 # 🚀快速下载
 [v1.02 Feature Pack 2 Update 1](https://github.com/HS201512/PEShellBuilder/releases/download/v1.02bu1/PEShellBuilder_v1.02_FP2_U1_260927.7z)<br>
+
+# 如果是小白，最好读完。
 
 # PEShellBuilder
 此工具可以让您自定义 Windows PE（例如壁纸、工具）<br>
