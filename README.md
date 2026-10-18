@@ -1,4 +1,4 @@
-**你现在看到的是一个0Star、0Watch的项目**。作者累了半天才研究出这个法子，制作不易。如果对你有帮助的话轻轻点个Star吧！😘
+作者累了半天才研究出这个法子，制作不易。如果对你有帮助的话轻轻点个Star吧！😘
 
 # 🚀快速下载
 [v1.02 Feature Pack 2 Update 1](https://github.com/HS201512/PEShellBuilder/releases/download/v1.02bu1/PEShellBuilder_v1.02_FP2_U1_260927.7z)<br>
