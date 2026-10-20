@@ -70,7 +70,6 @@ WinXShell WinXShell所在的目录（您可以自定义WinXShell.jcfg）
 
 - PEShellBuilder 要用到的工具
 位于此目录的 bin 文件夹，不要去动它
-=======
 - 自定义工具
 位于此目录的 PETools 文件夹里，您可以添加工具<br>
 
@@ -95,4 +94,3 @@ PEStartup.bat要和程序放到同一个目录（如果没有程序则忽略）<
 
 - 预置资源
 在此目录下新建Preset目录，里面的数据将会映射到X盘根目录<br>
->>>>>>> e6011d03d06bf9b42baae697f03d4bfa7eadde0b<br>
