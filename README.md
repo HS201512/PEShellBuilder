@@ -27,7 +27,7 @@ ISO默认放在脚本目录的“Windows 版本 PE 框架 x64.iso”，如果要
 - WinXShell<br>
   如果想要带桌面的 PE，这无疑是您的最佳之选。（桌面 开始菜单分类齐全、内存盘大小有效）<br>
 - PEShell<br>
-  如果想要更轻量的命令行 PE，这无疑是您的最佳之选。（无桌面，命令行可输入序号启动程序、电源选项等）<br>
+  如果想要更轻量的命令行 PE，这无疑是您的最佳之选。（无桌面，命令行可输入序号启动程序、电源选项等）但PEShellBuilder的大部分功能会被砍掉。<br>
 
 # PEShellBuilder 目录说明
 
@@ -85,7 +85,6 @@ WinXShell WinXShell所在的目录（您可以自定义WinXShell.jcfg）
 
 - 开机自启
 新建一个名为Startup的文件夹，在里面创建PEStartup.bat，里面可以写开机自启的命令和程序<br>
-代码千万不要有exit！！！<br>
 PEStartup.bat要和程序放到同一个目录（如果没有程序则忽略）<br>
 
 - 自定义程序包
@@ -94,3 +93,12 @@ PEStartup.bat要和程序放到同一个目录（如果没有程序则忽略）<
 
 - 预置资源
 在此目录下新建Preset目录，里面的数据将会映射到X盘根目录<br>
+
+- PEShellBuilder 要用到的工具
+位于此目录的 bin 文件夹，不要去动它<br>
+
+- AutoRun
+如要设置DVD 资源管理器图标，请把图标保存到此目录的 Icon\autorun.ico<br>
+
+- 其它
+位于此目录的Others文件夹。<br>
